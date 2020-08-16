@@ -1,10 +1,10 @@
 module.exports = {
+  base: '/inpageedit-document/',
   title: 'InPageEdit 文档中心',
   description: 'InPageEdit Documents Center',
   head: [
     ['script', { src: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js' }]
   ],
-  // base: '/inpageedit-document/',
   dest: './dist',
   plugins: [
     ['@vuepress/back-to-top'],
@@ -16,7 +16,16 @@ module.exports = {
     logo: '/images/logo/IPE-v2.png',
     nav: [
       { text: '主页', link: '/' },
-      { text: '文档', link: '/guide/' },
+      {
+        text: '文档',
+        link: '/guide/',
+        ariaLabel: 'label',
+        items: [
+          { text: '简介', link: '/guide/intro' },
+          { text: '快速上手', link: '/guide/install/quick-start' },
+          { text: '功能说明', link: '/guide/usage/quick-delete' }
+        ]
+      },
       { text: 'API', link: '/api/' },
       { text: '更新', link: '/update/' },
       { text: '关于', link: '/about/' },
@@ -28,21 +37,21 @@ module.exports = {
           title: '快速上手',
           collapsable: false,
           children: [
-            '/guide/',
-            '/guide/install-quick-start',
-            '/guide/install-via-gadget'
+            '/guide/intro',
+            '/guide/install/quick-start',
+            '/guide/install/gadget'
           ],
         },
         {
-          title: '功能介绍',
+          title: '功能说明',
           collapsable: false,
           children: [
-            '/guide/quick-delete',
-            '/guide/quick-diff',
-            '/guide/quick-edit',
-            '/guide/quick-redirect',
-            '/guide/quick-rename',
-            '/guide/toolbox',
+            '/guide/usage/quick-delete',
+            '/guide/usage/quick-diff',
+            '/guide/usage/quick-edit',
+            '/guide/usage/quick-redirect',
+            '/guide/usage/quick-rename',
+            '/guide/usage/toolbox',
           ]
         }
       ],
@@ -51,13 +60,7 @@ module.exports = {
           title: 'InPageEdit API',
           collapsable: false,
           children: [
-            '/api/'
-          ]
-        },
-        {
-          title: '钩子 Hook',
-          collapsable: true,
-          children: [
+            '/api/',
             '/api/hook'
           ]
         }
