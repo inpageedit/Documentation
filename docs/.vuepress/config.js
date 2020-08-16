@@ -4,6 +4,7 @@ module.exports = {
   head: [
     ['script', { src: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js' }]
   ],
+  // base: '/inpageedit-document/',
   dest: './dist',
   plugins: [
     ['@vuepress/back-to-top'],
@@ -75,7 +76,7 @@ module.exports = {
     },
     lastUpdated: '上次更新',
     docsRepo: 'Wjghj-Project/InPageEdit-Document',
-    docsBranch: 'docs',
+    docsBranch: 'master',
     editLinks: true,
     editLinkText: '帮助我们改善此页面',
   }
