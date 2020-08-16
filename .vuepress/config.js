@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/inpageedit-document/',
+  // base: '/inpageedit-document/',
   title: 'InPageEdit 文档中心',
   description: 'InPageEdit Documents Center',
   head: [
@@ -18,8 +18,6 @@ module.exports = {
       { text: '主页', link: '/' },
       {
         text: '文档',
-        link: '/guide/',
-        ariaLabel: 'label',
         items: [
           { text: '简介', link: '/guide/intro' },
           { text: '快速上手', link: '/guide/install/quick-start' },
