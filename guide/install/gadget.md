@@ -20,14 +20,12 @@
 
 2. 在`MediaWiki:Gadget-InPageEdit.js`中添加以下内容：
 
-```js
-mw.loader.load('https://cdn.jsdelivr.net/gh/dragon-fish/inpageedit-v2@master/script.min.js);
-```
+<<< @/.vuepress/components/install.js
 
 3. 在`MediaWiki:Gadget-InPageEdit`添加类似这样的内容，可以改动：
 
 ```wiki
-[InPageEdit https://github.com/Dragon-Fish/InPageEdit-v2/] - 由机智的小鱼君维护，面向熟练用户的快速维护工具集(小编辑、重定向、页面历史)
+[https://ipe.netlify.app/ InPageEdit] - 由机智的小鱼君维护，面向熟练用户的快速维护工具集(小编辑、重定向、页面历史)
 ```
 
 4. 大功告成，前往参数设置页面 → 小工具，查看小工具是否成功注册

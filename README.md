@@ -3,8 +3,8 @@ home: true
 heroImage: /images/logo/InPageEdit-v2.png
 heroText: InPageEdit
 tagline: 由机智的小鱼君开发，基于jQuery编写面向MediaWiki熟练用户的多功能插件
-actionText: 立刻安装 →
-actionLink: /guide/install/quick-start
+actionText: 查看文档 →
+actionLink: /guide/install/intro
 features:
   - title: 丝滑且顺畅
     details: 全新升级的动态效果，如丝般顺滑。配以 Material Design 色彩以及 FontAwesome。给您全新编辑体验，编辑从未如此愉快！
@@ -14,3 +14,7 @@ features:
     details: 拼上三个区块，显得整齐划一，令人心旷神怡，而且还能凑字数。
 footer: MIT Licensed | Copyright © 2020-present Dragon Fish (Documentions)
 ---
+
+在你的个人 js 页面添加以下内容，立刻使用：
+
+<<< @/.vuepress/components/install.js

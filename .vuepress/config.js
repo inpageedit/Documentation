@@ -2,14 +2,14 @@ module.exports = {
   // base: '/inpageedit-document/',
   locales: {
     '/': {
-      lang: 'zh-CN', 
+      lang: 'zh-CN',
       title: 'InPageEdit 文档中心',
-      description: 'InPageEdit Documents Center'
+      description: 'InPageEdit Documentation Center'
     },
     '/en/': {
       lang: 'en-US',
-      title: 'InPageEdit Documention Center',
-      description: 'InPageEdit Documention Center'
+      title: 'InPageEdit Documentation Center',
+      description: 'InPageEdit Documentation Center'
     }
   },
   head: [
@@ -66,6 +66,7 @@ module.exports = {
               children: [
                 '/guide/usage/quick-delete',
                 '/guide/usage/quick-diff',
+                '/guide/usage/quick-preview',
                 '/guide/usage/quick-edit',
                 '/guide/usage/quick-redirect',
                 '/guide/usage/quick-rename',
@@ -80,6 +81,15 @@ module.exports = {
               children: [
                 '/api/',
                 '/api/hook'
+              ]
+            }
+          ],
+          '/update/': [
+            {
+              title: '更新日志',
+              collapsable: false,
+              children: [
+                '/update/'
               ]
             }
           ],

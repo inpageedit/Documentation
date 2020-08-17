@@ -10,12 +10,10 @@
 2. 点击“编辑”按钮
 3. 在编辑框中添加以下内容：
 
-```js
-mw.loader.load('https://cdn.jsdelivr.net/gh/dragon-fish/inpageedit-v2@master/script.min.js');
-```
+<<< @/.vuepress/components/install.js
 
-4. 点击“保存”按钮
-5. 完成，请享用~
+1. 点击“保存”按钮
+2. 完成，请享用~
 
 ## 通过小工具开启
 

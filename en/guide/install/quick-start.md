@@ -10,9 +10,7 @@ Most MediaWiki sites allow user add customized JavaScript and you can install In
 2. Click the "Edit" button
 3. Add the following content in the text field:
 
-```js
-mw.loader.load('https://cdn.jsdelivr.net/gh/dragon-fish/inpageedit-v2@master/script.min.js');
-```
+<<< @/.vuepress/components/install.js
 
 4. Click the "Publish changes..." buttion
 5. Done, and enjoy~
