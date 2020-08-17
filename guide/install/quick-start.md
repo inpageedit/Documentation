@@ -11,7 +11,7 @@
 3. 在编辑框中添加以下内容：
 
 ```js
-mw.loader.load('https://cdn.jsdelivr.net/gh/dragon-fish/inpageedit-v2@master/script.min.js);
+mw.loader.load('https://cdn.jsdelivr.net/gh/dragon-fish/inpageedit-v2@master/script.min.js');
 ```
 
 4. 点击“保存”按钮
