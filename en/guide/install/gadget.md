@@ -6,7 +6,7 @@
 > Also note that these special gadgets are not part of the MediaWiki software, and are usually developed and maintained by users on your local wiki.<br>
 > ---- MediaWiki
 
-~~I suggest just read <mediawiki.org>, so tired to write anymore~~
+~~I suggest just read mediawiki.org, so tired to write anymore~~
 
 ## Install this plugin as a Gadget
 
