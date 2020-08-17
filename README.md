@@ -12,5 +12,5 @@ features:
     details: InPageEdit，一款多功能 MediaWiki 插件，不仅仅是编辑快速比对页面差异、快速重定向、快速移动页面……汇聚大量常用功能，辅以强大的 API，让你无需再打开一堆标签页！
   - title: 强迫症犯了
     details: 拼上三个区块，显得整齐划一，令人心旷神怡，而且还能凑字数。
-footer: MIT Licensed | Copyright © 2020-present Dragon Fish (Documents)
+footer: MIT Licensed | Copyright © 2020-present Dragon Fish (Documentions)
 ---

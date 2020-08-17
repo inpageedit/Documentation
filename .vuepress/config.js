@@ -8,8 +8,8 @@ module.exports = {
     },
     '/en/': {
       lang: 'en-US',
-      title: 'InPageEdit Documents Center',
-      description: 'InPageEdit Documents Center'
+      title: 'InPageEdit Documention Center',
+      description: 'InPageEdit Documention Center'
     }
   },
   head: [
@@ -101,62 +101,62 @@ module.exports = {
         lastUpdated: 'Last Updated:',
         editLinkText: 'Help us improve this page',
         nav: [
-          { text: 'Home', link: '/' },
+          { text: 'Home', link: '/en/' },
           {
             text: 'Documents',
             items: [
-              { text: 'Intro', link: '/guide/intro' },
-              { text: 'Quick Start', link: '/guide/install/quick-start' },
-              { text: 'Function Info', link: '/guide/usage/quick-delete' }
+              { text: 'Intro', link: '/en/guide/intro' },
+              { text: 'Quick Start', link: '/en/guide/install/quick-start' },
+              { text: 'Function Info', link: '/en/guide/usage/quick-delete' }
             ]
           },
-          { text: 'API', link: '/api/' },
-          { text: 'Updates', link: '/update/' },
-          { text: 'About', link: '/about/' },
+          { text: 'API', link: '/en/api/' },
+          { text: 'Updates', link: '/en/update/' },
+          { text: 'About', link: '/en/about/' },
           { text: 'GitHub', link: 'https://github.com/Dragon-Fish/InPageEdit-v2/' }
         ],
         sidebar: {
-          '/guide/': [
+          '/en/guide/': [
             {
               title: 'Get Started',
               collapsable: false,
               children: [
-                '/guide/intro',
-                '/guide/install/quick-start',
-                '/guide/install/gadget'
+                '/en/guide/intro',
+                '/en/guide/install/quick-start',
+                '/en/guide/install/gadget'
               ],
             },
             {
-              title: 'Function Info',
+              title: 'Features',
               collapsable: false,
               children: [
-                '/guide/usage/quick-delete',
-                '/guide/usage/quick-diff',
-                '/guide/usage/quick-edit',
-                '/guide/usage/quick-redirect',
-                '/guide/usage/quick-rename',
-                '/guide/usage/toolbox',
+                '/en/guide/usage/quick-delete',
+                '/en/guide/usage/quick-diff',
+                '/en/guide/usage/quick-edit',
+                '/en/guide/usage/quick-redirect',
+                '/en/guide/usage/quick-rename',
+                '/en/guide/usage/toolbox',
               ]
             }
           ],
-          '/api/': [
+          '/en/api/': [
             {
               title: 'InPageEdit API',
               collapsable: false,
               children: [
-                '/api/',
-                '/api/hook'
+                '/en/api/',
+                '/en/api/hook'
               ]
             }
           ],
-          '/about/': [
+          '/en/about/': [
             {
-              title: 'About This Plugin',
+              title: 'About',
               collapsable: false,
               children: [
-                '/about/',
-                '/about/logo',
-                '/about/donate'
+                '/en/about/',
+                '/en/about/logo',
+                '/en/about/donate'
               ]
             }
           ]
