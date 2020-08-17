@@ -18,7 +18,7 @@
 * InPageEdit[resourceloader|rights=edit,skipcaptcha]|InPageEdit.js
 ```
 
-3. 在`MediaWiki:Gadget-InPageEdit.js`中添加以下内容：
+2. 在`MediaWiki:Gadget-InPageEdit.js`中添加以下内容：
 
 ```js
 mw.loader.load('https://cdn.jsdelivr.net/gh/dragon-fish/inpageedit-v2@master/script.min.js);
