@@ -15,6 +15,7 @@
   "dependencies": {
     "less": "^3.12.2",
     "less-loader": "^6.2.0",
-    "vuepress": "^1.5.3"
+    "vuepress": "^1.5.3",
+    "vuepress-theme-antdocs": "^1.1.1"
   }
 }
