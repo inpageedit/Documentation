@@ -100,7 +100,8 @@ module.exports = {
               children: [
                 '/about/',
                 '/about/logo',
-                '/about/donate'
+                '/about/analysis',
+                '/about/donate',
               ]
             }
           ]
