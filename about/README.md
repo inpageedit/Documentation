@@ -4,7 +4,7 @@
 
 ### 作者信息
 
-- 原作者：机智的小鱼君 _Dragon Fish_ <mailto:dragon-fish@qq.com>
+- 原作者：机智的小鱼君 _Dragon Fish_ [dragon-fish@qq.com](mailto:dragon-fish@qq.com)
 - 合作：
   - 多语言：[Fandom Developers Wiki](https://dev.fandom.com/) 用户以及来自 GitHub 的用户
 
@@ -14,16 +14,16 @@
 
 ### 技术信息
 
-- JavaScript ES5+
-- [jQuery](https://jquery.com/) 2.2.0+
-- [MediaWiki API](https://mediawiki.org/w/api.php) (mw 1.22.0+)
-- [ssi-modal](http://ssbeefeater.github.io/)
+- ECMAScript 6.0 (JavaScript ES6+)
+- [jQuery](https://jquery.com/) 1.9.0+
+- [MediaWiki API](https://mediawiki.org/w/api.php) (mw 1.20.0+)
+- [ssi-modal](http://ssbeefeater.github.io/) v1.0.28
 
 ## InPageEdit Analysis
 
 ### 作者信息
 
-- 作者：机智的小鱼君 _Dragon Fish_ <mailto:dragon-fish@qq.com>
+- 作者：机智的小鱼君 _Dragon Fish_ [dragon-fish@qq.com](mailto:dragon-fish@qq.com)
 
 ### 开源协议
 
@@ -44,3 +44,8 @@
 ### 开源协议
 
 [MIT License](https://opensource.org/licenses/MIT)
+
+### 技术信息
+
+- [VuePress](https://www.vuepress.cn/)
+- [Netlify](https://www.netlify.com/)
