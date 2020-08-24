@@ -1,29 +1,31 @@
 <template>
-  <div class="analysis-container">
-    <h2>AJAX状态</h2>
-    <div>请求状态：<status :status="loading" /></div>
-    <h2>ECharts测试</h2>
-    <div>
-      <echarts :setData="charts" />
-    </div>
-    <h2>列表测试</h2>
-    <div>
-      <table style="width: 100%;">
-        <tr>
-          <th>日期</th>
-          <th>次数</th>
-        </tr>
-        <tr v-for="(item, index) in analysis" :key="index">
-          <th>{{ item.date.replace(/(.+)-(.+)-(.+)/gi, "$1年$2月$3日") }}</th>
-          <td>{{ item.times }}</td>
-        </tr>
-      </table>
-    </div>
+<div class="analysis-container">
+  <h2>AJAX状态</h2>
+  <div>请求状态：
+    <status :status="loading" />
   </div>
+  <h2>ECharts测试</h2>
+  <div>
+    <echarts :setData="charts" />
+  </div>
+  <h2>列表测试</h2>
+  <div>
+    <table style="width: 100%;">
+      <tr>
+        <th>日期</th>
+        <th>次数</th>
+      </tr>
+      <tr v-for="(item, index) in analysis" :key="index">
+        <th>{{ item.date.replace(/(.+)-(.+)-(.+)/gi, "$1年$2月$3日") }}</th>
+        <td>{{ item.times }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
 </template>
 
 <script>
-const jqeury = require("jquery");
+// const jqeury = require("jquery");
 const axios = require("axios");
 
 export default {
@@ -43,8 +45,7 @@ export default {
           //   type: 'cross'
           // }
         },
-        dataZoom: [
-          {
+        dataZoom: [{
             show: true,
             realtime: true,
           },
@@ -85,13 +86,11 @@ export default {
             snap: true,
           },
         },
-        series: [
-          {
-            name: "使用次数",
-            type: "line",
-            data: [0],
-          },
-        ],
+        series: [{
+          name: "使用次数",
+          type: "line",
+          data: [0],
+        }, ],
       },
     };
   },
@@ -149,8 +148,7 @@ export default {
           //   type: 'cross'
           // }
         },
-        dataZoom: [
-          {
+        dataZoom: [{
             show: true,
             realtime: true,
           },
@@ -191,13 +189,11 @@ export default {
             snap: true,
           },
         },
-        series: [
-          {
-            name: "使用次数",
-            type: "line",
-            data: dateTimes,
-          },
-        ],
+        series: [{
+          name: "使用次数",
+          type: "line",
+          data: dateTimes,
+        }, ],
       };
       this.charts = dateOption;
     },

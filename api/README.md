@@ -101,9 +101,25 @@ window.InPageEdit = InPageEdit;
 - `param` {Object}
   - MediaWiki diff API 标准参数
 
-## `InPageEdit.quickEdit()`
+## `InPageEdit.quickEdit([options])`
 
-……
+按照设定参数打开快速编辑的模态框
+
+- `options` {Object|String}
+
+  - 不配置或者传入空值，以当前浏览的页面为目标页面
+  - 传入字符串时，将字符串视为目标页面名
+  - 传入 JSON 对象时，将会尝试与默认配置项进行合并后执行后续操作
+
+- 可供配置的 JSON 参数：
+  - `options.page` {String} 页面名称，不能与`pageId`同时使用（预设为当前页面名）
+  - `options.pageId` {Number} 页面 ID，不能与`page`同时使用
+  - `options.revision` {Number} 若配置，将以提供的 revision 编号查找页面信息，可能忽略页面配置（预设为当前页面的版本 ID）
+  - `options.section` {Number|"new"} 若配置，编辑段落，段落为大于 0 且小于页面段落数的数字或者"new"（预设为null，编辑全文）
+  - `options.editMinor` {Boolean} 若配置，取代小编辑的勾选状态
+  - `options.editSummary` 若配置，取代编辑摘要的内容
+  - `options.reload` {Boolean} 若配置，取代保存后刷新页面的勾选状态
+  - 其余参数均不建议修改，否则可能导致故障
 
 ## `InPageEdit.quickPreview()`
 
