@@ -19,7 +19,7 @@ InPageEdit 是一个不断迭代的插件，开源的本质和~~社区~~作者�
 <p>本段落的内容是未来可能进行的更新，但不保证提到的所有功能与特性均会实装，可能产生的变化也不会尽数罗列于此，一切请以最终版本为准。</p>
 </infobox>
 
-- <span class="pornhub"><span>Break</span><span>changes</span></span> `InPageEdit-v2` 将<ruby>重命名<rt>brand new</rt></ruby>为 `InPageEdit`
+- <span class="pornhub"><span>Breaking</span><span>changes</span></span> `InPageEdit-v2` 将<ruby>重命名<rt>brand new</rt></ruby>为 `InPageEdit`
   - **不会**在此版本发布后的 3 个补丁内执行此变更
   - GitHub 仓库将进行重命名，将保留旧仓库到新仓库的重定向
   - 将保证即便使用插件的个人或 wiki 不采取任何应对措施也不会影响正常使用
