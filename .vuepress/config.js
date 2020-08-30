@@ -44,7 +44,7 @@ module.exports = {
               { text: '功能说明', link: '/guide/usage/quick-delete' }
             ]
           },
-          { text: 'API', link: '/api/' },
+          { text: '开发', link: '/develop/' },
           { text: '更新', link: '/update/' },
           { text: '关于', link: '/about/' },
           { text: 'GitHub', link: 'https://github.com/Dragon-Fish/InPageEdit-v2/' }
@@ -55,32 +55,33 @@ module.exports = {
               title: '快速上手',
               collapsable: false,
               children: [
-                '/guide/intro',
-                '/guide/install/quick-start',
-                '/guide/install/gadget'
+                'intro',
+                'install/quick-start',
+                'install/gadget'
               ],
             },
             {
               title: '功能说明',
               collapsable: false,
               children: [
-                '/guide/usage/quick-delete',
-                '/guide/usage/quick-diff',
-                '/guide/usage/quick-preview',
-                '/guide/usage/quick-edit',
-                '/guide/usage/quick-redirect',
-                '/guide/usage/quick-rename',
-                '/guide/usage/toolbox',
+                'usage/quick-delete',
+                'usage/quick-diff',
+                'usage/quick-preview',
+                'usage/quick-edit',
+                'usage/quick-redirect',
+                'usage/quick-rename',
+                'usage/toolbox',
               ]
             }
           ],
-          '/api/': [
+          '/develop/': [
             {
               title: 'InPageEdit API',
               collapsable: false,
               children: [
-                '/api/',
-                '/api/hook'
+                '',
+                'api',
+                'hook'
               ]
             }
           ],
@@ -89,7 +90,7 @@ module.exports = {
               title: '更新日志',
               collapsable: false,
               children: [
-                '/update/'
+                ''
               ]
             }
           ],
@@ -98,10 +99,10 @@ module.exports = {
               title: '关于插件',
               collapsable: false,
               children: [
-                '/about/',
-                '/about/logo',
-                '/about/analysis',
-                '/about/donate',
+                '',
+                'logo',
+                'analysis',
+                'donate',
               ]
             }
           ]

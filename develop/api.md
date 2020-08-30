@@ -67,8 +67,7 @@ window.InPageEdit = InPageEdit;
 获取参数设置的值
 
 - `setting`{String}
-  - Default: `""`
-  - 需要获取的参数设置的键
+  - 需要获取的参数设置的键，不指定则以 Object 返回全部设定
 
 ### `InPageEdit.preference.set(<settingKey>[, settingValue])`
 
@@ -115,7 +114,7 @@ window.InPageEdit = InPageEdit;
   - `options.page` {String} 页面名称，不能与`pageId`同时使用（预设为当前页面名）
   - `options.pageId` {Number} 页面 ID，不能与`page`同时使用
   - `options.revision` {Number} 若配置，将以提供的 revision 编号查找页面信息，可能忽略页面配置（预设为当前页面的版本 ID）
-  - `options.section` {Number|"new"} 若配置，编辑段落，段落为大于 0 且小于页面段落数的数字或者"new"（预设为null，编辑全文）
+  - `options.section` {Number|"new"} 若配置，编辑段落，段落为大于 0 且小于页面段落数的数字或者"new"（预设为 null，编辑全文）
   - `options.editMinor` {Boolean} 若配置，取代小编辑的勾选状态
   - `options.editSummary` 若配置，取代编辑摘要的内容
   - `options.reload` {Boolean} 若配置，取代保存后刷新页面的勾选状态
@@ -148,12 +147,12 @@ window.InPageEdit = InPageEdit;
 
 ……
 
-## `_msg(<...args>)`
+## `_msg(<msgKey>[, ...args])`
 
 <status status="warning">内部</status>
 
 通过键获取 i18n 字符串
 
+- `msgKey` {String}
 - `args` {String}
-  - 第一个为必选，作为 i18n 信息的键
-  - 从第二个开始的参数将替换字符串中的占位符（例如`$1`）
+  - 替换字符串中的占位符（例如`$1`）
