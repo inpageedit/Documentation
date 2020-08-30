@@ -58,7 +58,7 @@
 
 ## 安装要求
 
-InPageEdit 是一个基于 JavaScript 的插件，在编写时使用了很多 jQuery 的语法以及 ECMAScript 6.0 的语法，在请求 MediaWiki API 时也用到了一些比较新的接口，因此建议你在现代浏览器以及尽可能新的 MediaWiki 网站上使用。在未来并没有兼容过时浏览器或者老版本 MediaWiki 的计划。
+InPageEdit 是一个基于 JavaScript 的插件，在编写时使用了很多 jQuery 的语法以及 ECMAScript 版本大于 2018 的语法，在请求 MediaWiki API 时也用到了一些比较新的接口，因此建议你在现代浏览器以及尽可能新的 MediaWiki 网站上使用。在未来并没有兼容过时浏览器或者老版本 MediaWiki 的计划。
 
 ### 支持的浏览器
 
@@ -86,4 +86,3 @@ InPageEdit 是一个基于 JavaScript 的插件，在编写时使用了很多 jQ
 ### jQuery 版本
 
 - jQuery > 1.9.x
-

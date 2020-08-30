@@ -4,32 +4,17 @@ InPageEdit 是一个不断迭代的插件，开源的本质和~~社区~~作者�
 
 若想查看任意版本的更新详情，可以从目录里选择来快速跳转。
 
-## 14.0.0-insider
+## 14.0.0+ <status status="dev">前瞻</status>
 
-<status status="dev"/><status status="warning">内部测试</status>
+<status status="warning">内部测试</status>
 
 <u>**预计**</u>发布日期: 2020 年 9 月中旬
 
-<infobox type="error">
-<p class="title">破坏性变更</p>
-<p>警告：此版本可能包含破坏性变更。</p>
-</infobox>
 <infobox type="info">
 <p class="title">新版本前瞻</p>
 <p>本段落的内容是未来可能进行的更新，但不保证提到的所有功能与特性均会实装，可能产生的变化也不会尽数罗列于此，一切请以最终版本为准。</p>
 </infobox>
 
-- <span class="pornhub"><span>Breaking</span><span>changes</span></span> `InPageEdit-v2` 将<ruby>重命名<rt>brand new</rt></ruby>为 `InPageEdit`
-  - **不会**在此版本发布后的 3 个补丁内执行此变更
-  - GitHub 仓库将进行重命名，将保留旧仓库到新仓库的重定向
-  - 将保证即便使用插件的个人或 wiki 不采取任何应对措施也不会影响正常使用
-- <status status="warning"/> 从此版本开始将使用新的版本命名方式
-  - `<主版本号>.<次版本号>.<补丁编号>`
-    - **主版本号** 项目结构变更、新增重要功能
-    - **次版本号** 现有功能优化、新增小部件
-    - **补丁编号** 常规故障修复、代码语法优化
-  - 例如 `2.13.4-6` → `13.4.6`
-  - 旧版本将**不会**重新命名
 - <status status="new"/> 快速巡查功能、快速回退功能
   - 在用户反馈中这两个功能的需求呼声较高，因此会考虑优先实装
 - <status status="updated"/> 为钩子（hook）添加上下文
@@ -41,6 +26,32 @@ InPageEdit 是一个不断迭代的插件，开源的本质和~~社区~~作者�
   - 移动版皮肤导致的种种问题仍旧不会被优先考虑，~~因为它太烦人了~~
   - 有关编辑提示在子页面的问题可能会在后续补丁中进行修复，~~因为它也太烦人了~~
 - <span class="pornhub"><span>恰</span><span>饭</span></span> ~~随着对 InPageEdit 维护的时间越来越久，逐渐发现这个过程很伤肝，为了给自己凑钱买一些生发水，可能会考虑开设打赏通道（SMJBWY）~~
+
+## 14.0.0 - Renewed update
+
+更新日期：2020 年 8 月 30 日 20:05:14
+
+<infobox type="error">
+<p class="title">破坏性变更</p>
+<p>警告：此版本包含破坏性变更。</p>
+</infobox>
+
+- <status status="info"/> 这是一次技术更新，未添加新功能
+- <status status="new"/> 插件入口文件地址已更改，请修改您的引用地址为：
+
+<<< @/.vuepress/components/install.js
+
+- <status status="new"/> 源代码现已采用模块化设计
+  - InPageEdit 模块使用`CommonJS`规范，使用 Webpack 打包
+- <span class="pornhub"><span>Breaking</span><span>changes</span></span> 钩子 `dfgh.i18n` 被删除
+  - `_msg` 模块将不再使用 `dfgh.i18n` 钩子，它现在作为 `mw.hook('InPageEdit')` 的上下文传递
+- <span class="pornhub"><span>Breaking</span><span>changes</span></span> `InPageEdit-v2` 将<ruby>重命名<rt>brand new</rt></ruby>为 `InPageEdit`
+  - **不会**在此版本发布后的 3 个补丁内执行此变更
+  - GitHub 仓库将进行重命名，将保留旧仓库到新仓库的重定向
+  - 将保证即便使用插件的个人或 wiki 不采取任何应对措施也不会影响正常使用
+- <status status="warning"/> 从此版本开始将使用新的版本命名方式
+  - 旧版本将**不会**重新命名
+  - [查看详情](/develop/index.html#)
 
 ## 2.13.4-7 (2.13.4 patch 7)
 
