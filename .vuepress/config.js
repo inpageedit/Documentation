@@ -1,3 +1,6 @@
+const sideBar = require('./themeConfig/sideBar');
+const navBar = require('./themeConfig/navBar');
+
 module.exports = {
   // base: '/inpageedit-document/',
   locales: {
@@ -13,7 +16,15 @@ module.exports = {
     }
   },
   head: [
-    ['script', { src: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js' }]
+    ['link', { rel: 'icon', href: '/images/logo/IPE.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#2684FF' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: '/images/logo/touch-icon.jpg' }],
+    ['link', { rel: 'mask-icon', href: '/images/logo/touch-icon.jpg', color: '#2684FF' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/images/logo/touch-icon.jpg' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   dest: './dist',
   plugins: [
@@ -21,6 +32,10 @@ module.exports = {
     ['@vuepress/register-components', {
       componentDir: 'components',
     }],
+    ['@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: true
+    }]
   ],
   themeConfig: {
     logo: '/images/logo/IPE-v2.png',
@@ -34,147 +49,15 @@ module.exports = {
         label: '简体中文',
         lastUpdated: '上次更新',
         editLinkText: '帮助我们改善此页面',
-        nav: [
-          { text: '主页', link: '/' },
-          {
-            text: '文档',
-            items: [
-              { text: '简介', link: '/guide/intro' },
-              { text: '快速上手', link: '/guide/install/quick-start' },
-              { text: '功能说明', link: '/guide/usage/quick-delete' }
-            ]
-          },
-          { text: '开发', link: '/develop/' },
-          { text: '更新', link: '/update/' },
-          { text: '关于', link: '/about/' },
-          { text: 'GitHub', link: 'https://github.com/Dragon-Fish/InPageEdit-v2/' }
-        ],
-        sidebar: {
-          '/guide/': [
-            {
-              title: '快速上手',
-              collapsable: false,
-              children: [
-                'intro',
-                'install/quick-start',
-                'install/gadget'
-              ],
-            },
-            {
-              title: '功能说明',
-              collapsable: false,
-              children: [
-                'usage/quick-delete',
-                'usage/quick-diff',
-                'usage/quick-preview',
-                'usage/quick-edit',
-                'usage/quick-redirect',
-                'usage/quick-rename',
-                'usage/toolbox',
-              ]
-            }
-          ],
-          '/develop/': [
-            {
-              title: 'InPageEdit API',
-              collapsable: false,
-              children: [
-                '',
-                'api',
-                'hook',
-                'nouns',
-                'plugin'
-              ]
-            }
-          ],
-          '/update/': [
-            {
-              title: '更新日志',
-              collapsable: false,
-              children: [
-                ''
-              ]
-            }
-          ],
-          '/about/': [
-            {
-              title: '关于插件',
-              collapsable: false,
-              children: [
-                '',
-                'logo',
-                'do-you-know',
-                'donate',
-              ]
-            }
-          ]
-        }
+        nav: navBar.zh,
+        sidebar: sideBar.zh
       },
       '/en/': {
         label: 'English',
         lastUpdated: 'Last Updated:',
         editLinkText: 'Help us improve this page',
-        nav: [
-          { text: 'Home', link: '/en/' },
-          {
-            text: 'Documents',
-            items: [
-              { text: 'Intro', link: '/en/guide/intro' },
-              { text: 'Quick Start', link: '/en/guide/install/quick-start' },
-              { text: 'Function Info', link: '/en/guide/usage/quick-delete' }
-            ]
-          },
-          { text: 'API', link: '/en/api/' },
-          { text: 'Updates', link: '/en/update/' },
-          { text: 'About', link: '/en/about/' },
-          { text: 'GitHub', link: 'https://github.com/Dragon-Fish/InPageEdit-v2/' }
-        ],
-        sidebar: {
-          '/en/guide/': [
-            {
-              title: 'Get Started',
-              collapsable: false,
-              children: [
-                '/en/guide/intro',
-                '/en/guide/install/quick-start',
-                '/en/guide/install/gadget'
-              ],
-            },
-            {
-              title: 'Features',
-              collapsable: false,
-              children: [
-                '/en/guide/usage/quick-delete',
-                '/en/guide/usage/quick-diff',
-                '/en/guide/usage/quick-edit',
-                '/en/guide/usage/quick-redirect',
-                '/en/guide/usage/quick-rename',
-                '/en/guide/usage/toolbox',
-              ]
-            }
-          ],
-          '/en/api/': [
-            {
-              title: 'InPageEdit API',
-              collapsable: false,
-              children: [
-                '/en/api/',
-                '/en/api/hook'
-              ]
-            }
-          ],
-          '/en/about/': [
-            {
-              title: 'About',
-              collapsable: false,
-              children: [
-                '/en/about/',
-                '/en/about/logo',
-                '/en/about/donate'
-              ]
-            }
-          ]
-        }
+        nav: navBar.en,
+        sidebar: sideBar.en
       }
     }
   }
