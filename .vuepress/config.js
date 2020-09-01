@@ -81,7 +81,9 @@ module.exports = {
               children: [
                 '',
                 'api',
-                'hook'
+                'hook',
+                'nouns',
+                'plugin'
               ]
             }
           ],
@@ -101,7 +103,7 @@ module.exports = {
               children: [
                 '',
                 'logo',
-                'analysis',
+                'do-you-know',
                 'donate',
               ]
             }
