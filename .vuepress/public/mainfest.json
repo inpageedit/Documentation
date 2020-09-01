@@ -1,0 +1,22 @@
+{
+  "name": "InPageEdit文档中心",
+  "short_name": "IPE Doc",
+  "description": "InPageEdit官方文档中心",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "blue",
+  "icons": [
+    {
+      "src": "/images/logo/touch-icon.jpg",
+      "sizes": "250x250",
+      "type": "image/jpg"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "web"
+    }
+  ]
+}
