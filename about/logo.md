@@ -1,4 +1,4 @@
-# InPageEdit Logo
+# 关于 Logo
 
 ![](/images/logo/InPageEdit.png)
 

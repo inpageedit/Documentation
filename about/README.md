@@ -14,10 +14,12 @@
 
 ### 技术信息
 
-- ECMAScript 6.0 (JavaScript ES6+)
+- [CommonJS](http://www.commonjs.org/)
+- ECMAScript 2020 (JavaScript ES2020)
 - [jQuery](https://jquery.com/) 1.9.0+
 - [MediaWiki API](https://mediawiki.org/w/api.php) (mw 1.20.0+)
 - [ssi-modal](http://ssbeefeater.github.io/) v1.0.28
+- [webpack](https://webpack.js.org/)
 
 ## InPageEdit Analysis
 
@@ -31,9 +33,9 @@
 
 ### 技术信息
 
-- [Node.js®](https://nodejs.org/) 14.7.0
-- [mongoDB](https://www.mongodb.com/) 4.0.10
 - [Express](http://expressjs.com/) 4.17.1
+- [mongoDB](https://www.mongodb.com/) 4.0.10
+- [Node.js®](https://nodejs.org/) 14.7.0
 
 ## InPageEdit Documentation Center
 
@@ -47,5 +49,5 @@
 
 ### 技术信息
 
-- [VuePress](https://www.vuepress.cn/)
 - [Netlify](https://www.netlify.com/)
+- [VuePress](https://www.vuepress.cn/)
