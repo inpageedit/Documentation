@@ -33,6 +33,7 @@ InPageEdit 是一个不断迭代的插件，开源的本质和~~社区~~作者�
 
 ### 本次更新
 
+- <status status="info"/> 源代码仓库地址已从`Dragon-Fish/InPageEdit-v2`移动到`Wjghj-Project/InPageEdit`，这对于一般使用者不会造成影响
 - <status status="updated"/> 个人设置窗口使用 Tabview 进行全新设计，刷新使用体验
   - <status status="new"/> 添加了统计信息展示，快去看看自己已经在 Wiki 上使用了多少次 InPageEdit 吧！
   - <status status="new"/> 添加了插件商店（Plugins Store），基于 InPageEdit 的扩展功能任君挑选！
