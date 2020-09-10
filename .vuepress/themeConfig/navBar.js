@@ -12,7 +12,7 @@ module.exports = {
     { text: '开发', link: '/develop/' },
     { text: '更新', link: '/update/' },
     { text: '关于', link: '/about/' },
-    { text: 'GitHub', link: 'https://github.com/Dragon-Fish/InPageEdit-v2/' }
+    { text: 'GitHub', link: 'https://github.com/Wjghj-Project/InPageEdit/' }
   ],
   en: [
     { text: 'Home', link: '/en/' },
@@ -27,6 +27,6 @@ module.exports = {
     { text: 'API', link: '/en/api/' },
     { text: 'Updates', link: '/en/update/' },
     { text: 'About', link: '/en/about/' },
-    { text: 'GitHub', link: 'https://github.com/Dragon-Fish/InPageEdit-v2/' }
+    { text: 'GitHub', link: 'https://github.com/Wjghj-Project/InPageEdit/' }
   ]
 }
