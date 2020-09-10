@@ -4,7 +4,7 @@ InPageEdit 是一个不断迭代的插件，开源的本质和~~社区~~作者�
 
 若想查看任意版本的更新详情，可以从目录里选择来快速跳转。
 
-## 14.0.0+ <status status="dev">前瞻</status>
+## 14.1.0+ <status status="dev">前瞻</status>
 
 <status status="warning">内部测试</status>
 
@@ -27,7 +27,29 @@ InPageEdit 是一个不断迭代的插件，开源的本质和~~社区~~作者�
   - 有关编辑提示在子页面的问题可能会在后续补丁中进行修复，~~因为它也太烦人了~~
 - <span class="pornhub"><span>恰</span><span>饭</span></span> ~~随着对 InPageEdit 维护的时间越来越久，逐渐发现这个过程很伤肝，为了给自己凑钱买一些生发水，可能会考虑开设打赏通道（SMJBWY）~~
 
-## 14.0.3
+## 14.1.0 `Stephanie_Dola`
+
+更新日期：2020 年 9 月 10 日 20:19:20
+
+### 本次更新
+
+- <status status="updated"/> 个人设置窗口使用 Tabview 进行全新设计，刷新使用体验
+  - <status status="new"/> 添加了统计信息展示，快去看看自己已经在 Wiki 上使用了多少次 InPageEdit 吧！
+  - <status status="new"/> 添加了插件商店（Plugins Store），基于 InPageEdit 的扩展功能任君挑选！
+    - 很多曾近的功能将转换为插件的形式，请前往挑选并开启
+    - 未来将添加的部分功能将以插件的形式出现，例如你们一直期待的快速巡查、快速回退
+- <status status="deleted"/> 版本更新提示弹窗被删减为了一次弹窗，并会在 10 秒后自动滚蛋，~~因为它确实是烦死人了~~
+
+### 已知问题
+
+- 在快速差异中，查看超出最后一次版本或者最新一次版本后继续点击可能会显示`undefined`，~~在修了在修了别催了~~
+
+### New supported languages
+
+- 日本語 (ja) - [Laclale](https://dev.fandom.com/wiki/User:Laclale)
+- Português do Brasil (pt-br) - [Eduaddad](https://dev.fandom.com/wiki/User:Eduaddad)
+
+## 14.0.3 `Shiro`
 
 更新日期：2020 年 9 月 1 日 15:39:39
 
@@ -78,7 +100,7 @@ InPageEdit.i18n = {
 };
 ```
 
-## 14.0.0 - Renewed update
+## 14.0.0 `Sora`
 
 更新日期：2020 年 8 月 30 日 20:05:14
 
@@ -160,9 +182,7 @@ InPageEdit.i18n = {
  * @example { "message-name": "$1是$2他爸爸。" }
  */
 /** 旧代码 **/
-msg("message-name")
-  .replace("$1", "大明")
-  .replace("$2", "小明"); // => 大明是小明他爸爸。
+msg("message-name").replace("$1", "大明").replace("$2", "小明"); // => 大明是小明他爸爸。
 /** 新代码 **/
 msg("message-name", "大明", "小明"); // => 大明是小明他爸爸。
 ```
