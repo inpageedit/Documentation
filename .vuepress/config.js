@@ -27,7 +27,7 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/images/logo/IPE.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
     // Google Search Console
-    ['meta', { name: 'google-site-verification', content: 'GWRTg_LOc-VxIMFKLEH0gpRF5R1RWW1IOumH4ViWEDA' }],
+    ['meta', { name: 'google-site-verification', content: 'Q1_PKtYLVLIMle_pJuNSTfXa8qIs0w9b_YTKHEPjCU4' }],
   ],
   dest: './dist',
   plugins: [
