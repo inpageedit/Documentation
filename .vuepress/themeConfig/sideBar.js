@@ -65,21 +65,21 @@ module.exports = {
         title: 'Get Started',
         collapsable: false,
         children: [
-          '/en/guide/intro',
-          '/en/guide/install/quick-start',
-          '/en/guide/install/gadget'
+          'intro',
+          'install/quick-start',
+          'install/gadget'
         ],
       },
       {
         title: 'Features',
         collapsable: false,
         children: [
-          '/en/guide/usage/quick-delete',
-          '/en/guide/usage/quick-diff',
-          '/en/guide/usage/quick-edit',
-          '/en/guide/usage/quick-redirect',
-          '/en/guide/usage/quick-rename',
-          '/en/guide/usage/toolbox',
+          'usage/quick-delete',
+          'usage/quick-diff',
+          'usage/quick-edit',
+          'usage/quick-redirect',
+          'usage/quick-rename',
+          'usage/toolbox',
         ]
       }
     ],
@@ -88,8 +88,8 @@ module.exports = {
         title: 'InPageEdit API',
         collapsable: false,
         children: [
-          '/en/api/',
-          '/en/api/hook'
+          '',
+          'hook'
         ]
       }
     ],
@@ -98,9 +98,9 @@ module.exports = {
         title: 'About',
         collapsable: false,
         children: [
-          '/en/about/',
-          '/en/about/logo',
-          '/en/about/donate'
+          '',
+          'logo',
+          'donate'
         ]
       }
     ]

@@ -16,15 +16,18 @@ module.exports = {
     }
   },
   head: [
+    // PWA
     ['link', { rel: 'icon', href: '/images/logo/IPE.png' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#2684FF' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'apple-touch-icon', href: '/images/logo/touch-icon.jpg' }],
-    ['link', { rel: 'mask-icon', href: '/images/logo/touch-icon.jpg', color: '#2684FF' }],
-    ['meta', { name: 'msapplication-TileImage', content: '/images/logo/touch-icon.jpg' }],
-    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+    ['link', { rel: 'apple-touch-icon', href: '/images/logo/IPE.png' }],
+    ['link', { rel: 'mask-icon', href: '/images/logo/IPE.png', color: '#2684FF' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/images/logo/IPE.png' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
+    // Google Search Console
+    ['meta', { name: 'google-site-verification', content: 'GWRTg_LOc-VxIMFKLEH0gpRF5R1RWW1IOumH4ViWEDA' }],
   ],
   dest: './dist',
   plugins: [

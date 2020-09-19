@@ -3,13 +3,14 @@
   "short_name": "IPE Doc",
   "description": "InPageEdit官方文档中心",
   "lang": "zh-CN",
-  "start_url": "/",
-  "display": "standalone",
+  "start_url": "/?utm_source=web_app_manifest",
+  "scope": "/",
+  "display": "fullscreen",
   "background_color": "#ffffff",
-  "theme_color": "blue",
+  "theme_color": "aliceblue",
   "icons": [
     {
-      "src": "/images/logo/touch-icon.jpg",
+      "src": "/images/logo/IPE.png",
       "sizes": "250x250",
       "type": "image/jpg"
     }
