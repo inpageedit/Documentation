@@ -8,7 +8,7 @@ InPageEdit 是一个不断迭代的插件，开源的本质和~~社区~~作者�
 
 <status status="warning">内部测试</status>
 
-<u>**预计**</u>发布日期: 2020 年 9 月中旬
+<u>**预计**</u>发布日期: 2020 年 10 月中旬
 
 <infobox type="info">
 <p class="title">新版本前瞻</p>
@@ -26,6 +26,28 @@ InPageEdit 是一个不断迭代的插件，开源的本质和~~社区~~作者�
   - 移动版皮肤导致的种种问题仍旧不会被优先考虑，~~因为它太烦人了~~
   - 有关编辑提示在子页面的问题可能会在后续补丁中进行修复，~~因为它也太烦人了~~
 - <span class="pornhub"><span>恰</span><span>饭</span></span> ~~随着对 InPageEdit 维护的时间越来越久，逐渐发现这个过程很伤肝，为了给自己凑钱买一些生发水，可能会考虑开设打赏通道（SMJBWY）~~
+
+## 14.1.3
+
+更新时间：2020 年 10 月 4 日 19:15:36
+
+### 本次更新
+
+- <status status="fixed"/> 修复了在新版本 MediaWiki (`1.35.0`) 上的一些问题
+
+### New supported languages
+
+- Hindī (hi) - [ThisIsACreeper0101](https://github.com/ThisIsACreeper0101)
+
+## 14.1.2
+
+- <status status="fixed"/> 技术更新，没有任何改动。
+
+## 14.1.1
+
+更新日期：2020 年 9 月 17 日 2:35:00
+
+- <status status="fixed"/> 技术更新，修复了一些缓存导致的问题
 
 ## 14.1.0 `Stephanie_Dola`
 
@@ -184,7 +206,9 @@ InPageEdit.i18n = {
  * @example { "message-name": "$1是$2他爸爸。" }
  */
 /** 旧代码 **/
-msg("message-name").replace("$1", "大明").replace("$2", "小明"); // => 大明是小明他爸爸。
+msg("message-name")
+  .replace("$1", "大明")
+  .replace("$2", "小明"); // => 大明是小明他爸爸。
 /** 新代码 **/
 msg("message-name", "大明", "小明"); // => 大明是小明他爸爸。
 ```
