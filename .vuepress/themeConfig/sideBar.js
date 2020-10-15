@@ -41,9 +41,7 @@ module.exports = {
       {
         title: '更新日志',
         collapsable: false,
-        children: [
-          ''
-        ]
+        children: require('../../update/index.json')
       }
     ],
     '/about/': [
