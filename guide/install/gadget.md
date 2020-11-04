@@ -15,7 +15,7 @@
 1. 在`MediaWiki:Gadgets-definition`另起一行，添加以下内容：
 
 ```wiki
-* InPageEdit[resourceloader|rights=edit,skipcaptcha]|InPageEdit.js
+* InPageEdit[ResourceLoader|rights=edit,skipcaptcha]|InPageEdit.js
 ```
 
 2. 在`MediaWiki:Gadget-InPageEdit.js`中添加以下内容：
@@ -25,7 +25,7 @@
 3. 在`MediaWiki:Gadget-InPageEdit`添加类似这样的内容，可以改动：
 
 ```wiki
-[https://ipe.netlify.app/ InPageEdit] - 由机智的小鱼君维护，面向熟练用户的快速维护工具集(小编辑、重定向、页面历史)
+[https://ipe.js.org/ InPageEdit] - 由机智的小鱼君维护，面向熟练用户的快速维护工具集(小编辑、重定向、页面历史)
 ```
 
 4. 大功告成，前往参数设置页面 → 小工具，查看小工具是否成功注册
