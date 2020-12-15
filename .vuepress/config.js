@@ -18,7 +18,7 @@ module.exports = {
   head: [
     // PWA
     ['link', { rel: 'icon', href: '/images/logo/IPE.png' }],
-    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    // ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#2684FF' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
@@ -35,10 +35,10 @@ module.exports = {
     ['@vuepress/register-components', {
       componentDir: 'components',
     }],
-    ['@vuepress/pwa', {
-      serviceWorker: true,
-      updatePopup: true
-    }]
+    // ['@vuepress/pwa', {
+    //   serviceWorker: true,
+    //   updatePopup: true
+    // }]
   ],
   themeConfig: {
     logo: '/images/logo/IPE-v2.png',

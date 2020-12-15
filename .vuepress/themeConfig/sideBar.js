@@ -26,7 +26,7 @@ module.exports = {
     ],
     '/develop/': [
       {
-        title: 'InPageEdit API',
+        title: 'InPageEdit 开发手册',
         collapsable: false,
         children: [
           '',
@@ -37,7 +37,7 @@ module.exports = {
         ]
       },
       {
-        title: 'InPageEdit Analysis',
+        title: 'Analysis API 文档',
         collapsable: false,
         children: [
           'analysis/',
