@@ -35,6 +35,16 @@ module.exports = {
           'nouns',
           'plugin'
         ]
+      },
+      {
+        title: 'InPageEdit Analysis',
+        collapsable: false,
+        children: [
+          'analysis/',
+          'analysis/v4',
+          'analysis/v3',
+          'analysis/v2',
+        ]
       }
     ],
     '/update/': [
