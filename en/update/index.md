@@ -1,5 +1,5 @@
-# 更新日志
+# CHANGE LOGS
 
-InPageEdit是一个不断迭代的插件，开源的本质和~~社区~~作者的热情给予了InPageEdit源源不断的活力。
+InPageEdit is an iterative plugin, the nature of open source and the enthusiasm of authors ~~from thecommunity~~ gives InPageEdit a constant source of vitality.
 
-若想查看任意版本的更新详情，请从左方选择你需要的版本。
+To read change log of any verison, please choose the verison you need on the left.
