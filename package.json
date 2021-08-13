@@ -7,9 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "yarn toc && vuepress dev ./",
-    "build": "yarn toc && vuepress build ./",
-    "toc": "node ./.vuepress/maintain/buildToc.js"
+    "build": "vuepress build ./src",
+    "serve": "vuepress dev ./src"
   },
   "author": "Dragon-Fish",
   "license": "MIT",

@@ -14,16 +14,16 @@ TBC
 - 数据中心：MariaDB, innoDB
 - 后端实现：PHP + NGINX
 
-### V2 <status status="done">生产阶段</status>
+### V2 <status status="error">已停用</status>
 
 > 文档：[V2 documentation](/develop/analysis/v2.html)
 
 - 服务器：Guangzhou, Wjghj Tencent > Beijing, Wjghj Aliyun
 - 数据中心：mongoDB Server 4.4
-- 前端实现：Hexo + 
+- 前端实现：Hexo + ECharts <status status="done">生产阶段</status>
 - 后端实现：PHP + NGINX
 
-### V3 <status status="warining">不推荐</status>
+### V3 <status status="error">已停用</status>
 
 > 文档：[V3 documentation](/develop/analysis/v3.html)
 
@@ -32,7 +32,7 @@ TBC
 - 前端实现：Vue + axios + ECharts
 - 后端实现：Express Server + Node.js + NGINX
 
-### V4 <status status="dev">开发阶段</status>
+### V4 <status status="done">生产阶段</status>
 
 > 文档：[V4 documentation](/develop/analysis/v4.html)
 

@@ -20,7 +20,7 @@ Gadgets on most wikis are defined by `MediaWiki:Gadgets-definition`, we suggest 
 
 2. Create `MediaWiki:Gadget-InPageEdit.js` as:
 
-<<< @/.vuepress/components/install.js
+<<< @/src/.vuepress/components/install.js
 
 3. Create `MediaWiki:Gadget-InPageEdit` and write some content like this:
 

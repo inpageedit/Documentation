@@ -14,3 +14,5 @@ features:
     details: Three trunks. Ordered. Pleasant. Adds word count.
 footer: MIT Licensed | Copyright © 2020-present Dragon Fish (Documentions)
 ---
+
+<<< @/src/.vuepress/components/install.js
