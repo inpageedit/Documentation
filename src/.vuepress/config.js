@@ -1,3 +1,4 @@
+const path = require('path')
 const sideBar = require('./themeConfig/sideBar')
 const navBar = require('./themeConfig/navBar')
 
@@ -6,12 +7,12 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'InPageEdit 文档中心',
-      description: 'InPageEdit Documentation Center',
+      title: '文档中心',
+      description: 'InPageEdit 文档中心',
     },
     '/en/': {
       lang: 'en-US',
-      title: 'InPageEdit Documentation Center',
+      title: 'Documentation',
       description: 'InPageEdit Documentation Center',
     },
   },
@@ -46,41 +47,52 @@ module.exports = {
   ],
   dest: './dist',
   plugins: [
-    ['@vuepress/back-to-top'],
+    ['@vuepress/plugin-back-to-top'],
+    ['@vuepress/plugin-search'],
     [
-      '@vuepress/register-components',
+      '@vuepress/plugin-register-components',
       {
-        componentDir: 'components',
+        componentsDir: path.resolve(__dirname, './components'),
       },
     ],
     [
-      '@vuepress/pwa',
+      '@vuepress/plugin-pwa',
       {
         serviceWorker: true,
+        skipWaiting: true,
         updatePopup: true,
       },
     ],
   ],
+  markdown: {
+    importCode: {
+      handleImportPath: (str) =>
+        str.replace(/^@src/, path.resolve(__dirname, '../')),
+    },
+  },
   themeConfig: {
     logo: '/images/logo/IPE-v2.png',
-    docsRepo: 'Wjghj-Project/InPageEdit-Document',
+    docsRepo: 'https://github.com/inpageedit/Documentation',
     docsBranch: 'master',
+    docsDir: 'src',
     editLinks: true,
     locales: {
       ariaLabel: 'Languages',
       selectText: 'Languages',
       '/': {
-        label: '简体中文',
-        lastUpdated: '上次更新',
+        selectLanguageName: '简体中文',
+        lastUpdatedText: '上次更新',
         editLinkText: '帮助我们改善此页面',
-        nav: navBar.zh,
+        contributorsText: '编辑者',
+        navbar: navBar.zh,
         sidebar: sideBar.zh,
       },
       '/en/': {
-        label: 'English',
-        lastUpdated: 'Last Updated:',
+        selectLanguageName: 'English',
+        lastUpdatedText: 'Last Updated',
         editLinkText: 'Help us improve this page',
-        nav: navBar.en,
+        contributorsText: 'Contributors',
+        navbar: navBar.en,
         sidebar: sideBar.en,
       },
     },

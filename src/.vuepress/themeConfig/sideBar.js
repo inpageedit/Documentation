@@ -5,83 +5,102 @@ module.exports = {
   zh: {
     '/guide/': [
       {
-        title: '快速上手',
-        collapsable: false,
-        children: ['intro', 'install/quick-start', 'install/gadget'],
-      },
-      {
-        title: '功能说明',
+        text: '快速上手',
         collapsable: false,
         children: [
-          'usage/quick-delete',
-          'usage/quick-diff',
-          'usage/quick-preview',
-          'usage/quick-edit',
-          'usage/quick-redirect',
-          'usage/quick-rename',
-          'usage/toolbox',
+          '/guide/intro',
+          '/guide/install/quick-start',
+          '/guide/install/gadget',
+        ],
+      },
+      {
+        text: '功能说明',
+        collapsable: false,
+        children: [
+          '/guide/usage/quick-delete',
+          '/guide/usage/quick-diff',
+          '/guide/usage/quick-preview',
+          '/guide/usage/quick-edit',
+          '/guide/usage/quick-redirect',
+          '/guide/usage/quick-rename',
+          '/guide/usage/toolbox',
         ],
       },
     ],
     '/develop/': [
       {
-        title: 'InPageEdit 开发手册',
+        text: 'InPageEdit 开发手册',
         collapsable: false,
-        children: ['', 'api', 'hook', 'nouns', 'plugin'],
+        children: [
+          '',
+          '/develop/api',
+          '/develop/hook',
+          '/develop/nouns',
+          '/develop/plugin',
+        ],
       },
       {
-        title: 'Analysis API 文档',
+        text: 'Analysis API 文档',
         collapsable: false,
-        children: ['analysis/', 'analysis/v4', 'analysis/v3', 'analysis/v2'],
+        children: [
+          '/develop/analysis/',
+          '/develop/analysis/v4',
+          '/develop/analysis/v3',
+          '/develop/analysis/v2',
+        ],
       },
     ],
     '/update/': [
       {
-        title: '更新日志',
+        text: '更新日志',
         collapsable: false,
         children: buildToc(resolve(__dirname, '../../update')),
       },
     ],
     '/about/': [
       {
-        title: '关于插件',
+        text: '关于插件',
         collapsable: false,
-        children: ['', 'logo', 'do-you-know', 'donate'],
+        children: ['', '/about/logo', '/about/do-you-know', '/about/donate'],
       },
     ],
   },
   en: {
     '/en/guide/': [
       {
-        title: 'Get Started',
-        collapsable: false,
-        children: ['intro', 'install/quick-start', 'install/gadget'],
-      },
-      {
-        title: 'Features',
+        text: 'Get Started',
         collapsable: false,
         children: [
-          'usage/quick-delete',
-          'usage/quick-diff',
-          'usage/quick-edit',
-          'usage/quick-redirect',
-          'usage/quick-rename',
-          'usage/toolbox',
+          '/en/guide/intro',
+          '/en/guide/install/quick-start',
+          '/en/guide/install/gadget',
+        ],
+      },
+      {
+        text: 'Features',
+        collapsable: false,
+        children: [
+          '/en/guide/usage/quick-delete',
+          '/en/guide/usage/quick-diff',
+          '/en/guide/usage/quick-edit',
+          '/en/guide/usage/quick-redirect',
+          '/en/guide/usage/quick-rename',
+          '/en/guide/usage/toolbox',
         ],
       },
     ],
     '/en/api/': [
       {
-        title: 'InPageEdit API',
+        text: 'InPageEdit API',
         collapsable: false,
-        children: ['', 'hook'],
+        children: ['/en/api/', '/en/api/hook'],
       },
     ],
     '/en/about/': [
       {
-        title: 'About',
+        text: 'About',
         collapsable: false,
-        children: ['', 'logo', 'donate'],
+        children: ['/en/about/', '/en/about/logo', '/en/about/donate'],
       },
     ],
   },

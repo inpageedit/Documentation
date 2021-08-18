@@ -48,7 +48,7 @@ function buildToc(dir) {
   // Insert special pages
   toc.unshift('', 'next')
 
-  return toc
+  return toc.map((i) => `/update/${i}`)
 }
 
 module.exports = {

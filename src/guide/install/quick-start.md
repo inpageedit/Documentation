@@ -10,7 +10,7 @@
 2. 点击“编辑”按钮
 3. 在编辑框中添加以下内容：
 
-<<< @/src/.vuepress/components/install.js
+@[code](@src/.vuepress/components/install.js)
 
 4. 点击“保存”按钮
 5. 完成，请享用~

@@ -105,3 +105,4 @@ dist
 
 # Testing files
 /dev
+.temp

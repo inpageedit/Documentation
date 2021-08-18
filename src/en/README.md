@@ -3,8 +3,9 @@ home: true
 heroImage: /images/logo/InPageEdit-v2.png
 heroText: InPageEdit
 tagline: Developed by 机智的小鱼君 (DragonFish), A plugin with muliple functionalities for advanced MediaWiki users based on jQuery
-actionText: Install now →
-actionLink: /en/guide/install/quick-start
+actions: 
+  - text: Install now →
+    link: /en/guide/install/quick-start
 features:
   - title: Smooth
     details: Updated smooth animations with Material Design colors and FontAwesome icon gives you a brand new editing experience. Editing is never so enjoyable!
@@ -15,4 +16,4 @@ features:
 footer: MIT Licensed | Copyright © 2020-present Dragon Fish (Documentions)
 ---
 
-<<< @/src/.vuepress/components/install.js
+@[code](@src/.vuepress/components/install.js)

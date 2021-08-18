@@ -11,4 +11,6 @@ import 'echarts/lib/component/tooltip'
 // import 'echarts-gl'
 
 // register component to use
-Vue.component('v-chart', ECharts)
+// Vue.component('v-chart', ECharts)
+
+export default {}

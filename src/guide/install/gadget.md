@@ -20,7 +20,7 @@
 
 2. 在`MediaWiki:Gadget-InPageEdit.js`中添加以下内容：
 
-<<< @/src/.vuepress/components/install.js
+@[code](@src/.vuepress/components/install.js)
 
 3. 在`MediaWiki:Gadget-InPageEdit`添加类似这样的内容，可以改动：
 
