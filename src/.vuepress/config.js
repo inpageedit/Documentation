@@ -58,9 +58,7 @@ module.exports = {
     [
       '@vuepress/plugin-pwa',
       {
-        serviceWorker: true,
         skipWaiting: true,
-        updatePopup: true,
       },
     ],
   ],
