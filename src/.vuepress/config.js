@@ -48,7 +48,22 @@ module.exports = {
   dest: './dist',
   plugins: [
     ['@vuepress/plugin-back-to-top'],
-    ['@vuepress/plugin-search'],
+    // ['@vuepress/plugin-search'],
+    [
+      '@vuepress/plugin-docsearch',
+      {
+        apiKey: '4b77600408c087ea165a4f748a216eed',
+        indexName: 'inpageedit-doc',
+        locales: {
+          '/': {
+            placeholder: 'Search',
+          },
+          '/zh/': {
+            placeholder: '搜索',
+          },
+        },
+      },
+    ],
     [
       '@vuepress/plugin-register-components',
       {
