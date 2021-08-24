@@ -52,8 +52,8 @@ module.exports = {
     [
       '@vuepress/plugin-docsearch',
       {
-        apiKey: '4b77600408c087ea165a4f748a216eed',
-        indexName: 'inpageedit-doc',
+        apiKey: '59c89e1e2464da17d2b76e6f7757ec2c',
+        indexName: 'ipe-js',
         locales: {
           '/': {
             placeholder: 'Search',
