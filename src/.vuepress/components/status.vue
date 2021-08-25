@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style>
 .status-tag {
   padding: 2px 6px;
   margin: auto 2px;

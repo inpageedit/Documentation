@@ -2,8 +2,10 @@
 
 ## 什么是小工具
 
-> **小工具**（零件/Gadget）大多数基于 JavaScript，所以你必须使你的浏览器启用 JavaScript 以使它们工作。<br>
-> 同时请注意，这些特殊小工具不是 MediaWiki 软件的组成部分，他们通常是由 Wiki 的管理员开发并维护的。<br>
+> **小工具**（零件/Gadget）大多数基于 JavaScript，所以你必须使你的浏览器启用 JavaScript 以使它们工作。
+> 
+> 同时请注意，这些特殊小工具不是 MediaWiki 软件的组成部分，他们通常是由 Wiki 的管理员开发并维护的。
+> 
 > —— MediaWiki
 
 ~~建议直接看 mediawiki.org，懒得写了~~

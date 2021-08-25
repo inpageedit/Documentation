@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="scss">
 .color-preview {
   margin: 0 2px 0 2px;
 

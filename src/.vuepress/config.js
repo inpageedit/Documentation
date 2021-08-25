@@ -2,6 +2,7 @@ const path = require('path')
 const sideBar = require('./themeConfig/sideBar')
 const navBar = require('./themeConfig/navBar')
 
+/** @type {import('vuepress').AppConfig} */
 module.exports = {
   // base: '/Documentation/',
   bundler: '@vuepress/bundler-vite',
@@ -57,10 +58,10 @@ module.exports = {
         indexName: 'ipe-js',
         locales: {
           '/': {
-            placeholder: 'Search',
-          },
-          '/zh/': {
             placeholder: '搜索',
+          },
+          '/en/': {
+            placeholder: 'Search',
           },
         },
       },

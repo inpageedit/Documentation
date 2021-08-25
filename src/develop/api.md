@@ -1,9 +1,8 @@
 # API 文档
 
-<infobox>
-<p class="title">施工中</p>
-<p>本页面的内容正在施工中，请以最终版为准！</p>
-</infobox>
+::: tip 施工中
+本页面的内容正在施工中，请以最终版为准！
+:::
 
 这里介绍的是由 InPageEdit 提供的函数或变量。
 
@@ -49,7 +48,7 @@ window.InPageEdit = InPageEdit;
 - Type: [Array]
 - Return:
 
-```json
+```js
 {
   "doNotCollectMyInfo": false,
   "doNotShowLocalWarn": false,
