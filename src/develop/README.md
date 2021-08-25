@@ -66,9 +66,9 @@ yarn updateversion x.x.x-xxx.x
 
 ### 安装依赖
 
-<infobox>
+::: tip
 本项目使用<strong>yarn</strong>管理包依赖，如果您没有安装yarn，请使用<code>npm i -g yarn</code>安装
-</infobox>
+:::
 
 `yarn install`
 
@@ -87,12 +87,13 @@ yarn updateversion x.x.x-xxx.x
 
 ## 通过 Node.js Package 发布
 
-<infobox>
+::: tip
 本项目的 GitHub 的 master 分支收到推送时，会自动构建发布npm包
-</infobox>
-<infobox type="warning">
+:::
+
+::: warning
 在手动推送前请记得先进行构建
-</infobox>
+:::
 
 ### 推送
 

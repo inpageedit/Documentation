@@ -1,46 +1,8 @@
 # 版本预告
 
-<infobox type="info">
-<p class="title">新版本前瞻</p>
-<p>本页面的内容是未来可能进行的更新，但不保证提到的所有功能与特性均会实装，可能产生的变化也不会尽数罗列于此，一切请以最终版本为准。</p>
-</infobox>
-
-## 14.2.0
-
-<status status="warning">内部测试</status>
-
-**预计**发布时间：不知道。
-
-<infobox type="info">
-<p class="title">兼容性变更</p>
-<p>本次更新有 API 变动，但所有变动均向前兼容。</p>
-</infobox>
-
-<infobox type="info">
-<p class="title">本页面是开发版的更新页面</p>
-<p>本页面的内容会随开发阶段而变动。</p>
-<p>页面记录的内容均为开发阶段内容，不保证与最终发布的版本一致。</p>
-</infobox>
-
-### 功能更新
-
-- <status status="new"/> 全新的安装向导
-  - 第一次安装 InPageEdit 时，将会向您显示安装向导，以便完成一些配置
-- <status status="new"/> 新功能：linksHere 快速链入页面
-- <status status="updated"/> 我们将预设不使用 InPageEdit Analysis 对您的使用数据进行收集
-  - 当然，我们没有删除这个功能，如果您愿意与其他人分享编辑数据，可以随时从设置里打开数据收集功能
-
-### 技术更新
-
-- <status status="new"/> 新的方法`beforeInstall`，该方法将暴露给 API 接口
-- <status status="new"/> 新的模块与 API 接口`linksHere`
-- <status status="new"/> 新的模块`stepModal`
-- <status status="new"/> 模块`_elements`新增 UI 结构：`$button`、`$checkbox`
-- <status status="updated"/> 模块`preference`更新，`preference.default` → `preference.defaultSettings`
-  - 向前兼容，但建议更换为新的键名，防止抑郁
-- <status status="updated"/> 模块`quickEdit`中的部分功能被拆分为了独立的模块
-  - `usedFiles`
-  - `usedTemplates`
+::: tip 新版本前瞻
+本页面的内容是未来可能进行的更新，但不保证提到的所有功能与特性均会实装，可能产生的变化也不会尽数罗列于此，一切请以最终版本为准。
+:::
 
 ## Roadmap
 

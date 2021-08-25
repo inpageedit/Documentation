@@ -32,7 +32,7 @@ module.exports = {
         text: 'InPageEdit 开发手册',
         collapsable: false,
         children: [
-          '',
+          '/develop/',
           '/develop/api',
           '/develop/hook',
           '/develop/nouns',
@@ -40,13 +40,14 @@ module.exports = {
         ],
       },
       {
-        text: 'Analysis API 文档',
+        text: 'Analytics API 文档',
         collapsable: false,
         children: [
-          '/develop/analysis/',
-          '/develop/analysis/v4',
-          '/develop/analysis/v3',
-          '/develop/analysis/v2',
+          '/develop/analytics/',
+          '/develop/analytics/v5',
+          '/develop/analytics/v4',
+          '/develop/analytics/v3',
+          '/develop/analytics/v2',
         ],
       },
     ],
@@ -61,7 +62,7 @@ module.exports = {
       {
         text: '关于插件',
         collapsable: false,
-        children: ['', '/about/logo', '/about/do-you-know', '/about/donate'],
+        children: ['/about/', '/about/logo', '/about/do-you-know', '/about/donate'],
       },
     ],
   },

@@ -4,6 +4,7 @@ const navBar = require('./themeConfig/navBar')
 
 module.exports = {
   // base: '/Documentation/',
+  bundler: '@vuepress/bundler-vite',
   locales: {
     '/': {
       lang: 'zh-CN',
@@ -99,6 +100,10 @@ module.exports = {
         contributorsText: '编辑者',
         navbar: navBar.zh,
         sidebar: sideBar.zh,
+        tip: '提示',
+        warning: '注意',
+        danger: '警告',
+        backToHome: '回到首页',
       },
       '/en/': {
         selectLanguageName: 'English',

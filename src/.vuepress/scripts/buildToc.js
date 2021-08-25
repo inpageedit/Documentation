@@ -2,12 +2,13 @@ const fs = require('fs')
 const path = require('path')
 
 function buildToc(dir) {
+  console.log('BUild version sideBar list for', dir)
   // Read all files
   const files = fs.readdirSync(dir)
   // Cache valid files
   var toc = []
-  for (let i = 0; i < files.length; i++) {
-    var fileName = files[i]
+  for (let fileName of files) {
+    console.log(fileName)
     if (
       fileName.toLowerCase() !== 'readme.md' &&
       fileName.toLowerCase() !== 'latest.md' &&
@@ -17,7 +18,7 @@ function buildToc(dir) {
         .pop()
         .toLowerCase() === 'md'
     ) {
-      toc.push(fileName.replace(/\.md/i, ''))
+      toc.push(fileName.replace(/\.md$/i, ''))
     }
   }
 
@@ -48,7 +49,10 @@ function buildToc(dir) {
   // Insert special pages
   toc.unshift('', 'next')
 
-  return toc.map((i) => `/update/${i}`)
+  const tocList = toc.map((i) => `/update/${i}`)
+  console.log('Build sideBar', tocList)
+
+  return tocList
 }
 
 module.exports = {
