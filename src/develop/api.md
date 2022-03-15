@@ -35,10 +35,6 @@ window.InPageEdit = InPageEdit;
 
 ……
 
-## `InPageEdit.findAndReplace(<element>)`
-
-……
-
 ## `InPageEdit.preference`
 
 ### `InPageEdit.preference.default`
