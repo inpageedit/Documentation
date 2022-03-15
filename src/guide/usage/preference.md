@@ -33,6 +33,7 @@
 | outSideClose                     | `boolean`                                             | `false`                             | 能否通过点击编辑器外部关闭                                      |
 | watchList                        | `'nochange' \| 'preferences' \| 'watch' \| 'unwatch'` | `'preferences'`                     | 分别表示：不改变监视状态、按系统设置、总是监视、从不监视        |
 | plugins                          | `string[]`                                            | `['toolbox.js', 'wiki-editor.js']`  | 欲使用的插件的 ID 列表，可用插件见 <https://ipe-plugins.js.org> |
+| noConfirmEdit                    | `boolean`                                             | -                                   | 是否跳过点击保存时的确认弹窗                                    |
 | noRedirectIfConvertedTitleExists | `boolean`                                             | -                                   | 快速重定向检测目标页面是否存在时是否检查变体页面 (简繁检测)     |
 
 ### Plugin - CodeMirror
