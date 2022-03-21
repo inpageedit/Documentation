@@ -46,6 +46,15 @@ module.exports = {
         content: 'Q1_PKtYLVLIMle_pJuNSTfXa8qIs0w9b_YTKHEPjCU4',
       },
     ],
+    // Google AdSense
+    [
+      'script',
+      {
+        async: '',
+        crossorigin: 'anonymous',
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5028262357303610',
+      },
+    ],
   ],
   dest: './dist',
   plugins: [
