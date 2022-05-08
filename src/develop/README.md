@@ -29,7 +29,7 @@
 ```bash
 # 检查版本号
 yarn checkversion
-# 跟新版本号
+# 更新版本号
 yarn updateversion x.x.x-xxx.x
 ```
 
