@@ -1,8 +1,9 @@
 <template>
   <a
-    class="issues-link external"
-    :id="'issues-' + id"
+    class="issue-link external"
+    :data-issue-id="id"
     :href="'https://github.com/inpageedit/inpageedit-v2/issues/' + id"
+    target="_blank"
   >
     <slot>issue#{{ id }}</slot>
     <svg

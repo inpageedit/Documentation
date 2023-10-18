@@ -7,14 +7,14 @@
 
 <script>
 export default {
-  name: "ColorPreview",
+  name: 'ColorPreview',
   props: {
     color: {
       type: String,
-      default: "#000000",
+      default: '#000000',
     },
   },
-};
+}
 </script>
 
 <style lang="scss">
@@ -23,10 +23,12 @@ export default {
 
   .color-block {
     display: inline-block;
-    width: 12px;
-    height: 12px;
-    box-shadow: 0 0 0 1px #aaaaaa;
-    margin-right: 4px;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-left: 0.2em;
+    margin-right: 0.5em;
+    border-radius: 50%;
   }
 }
 </style>
