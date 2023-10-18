@@ -28,7 +28,9 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
+import { defineProps } from 'vue'
+
+defineProps<{
   id: number
 }>()
 </script>

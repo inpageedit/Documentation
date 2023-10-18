@@ -1,5 +1,5 @@
 # Hook 文档
 
-<status status="dev">in progress</status>
+<StatusTag status="dev">in progress</StatusTag>
 
 这是未来版本将包含的特性。

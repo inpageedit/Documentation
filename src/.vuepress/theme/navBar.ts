@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   zh: [
     { text: '主页', link: '/' },
     {

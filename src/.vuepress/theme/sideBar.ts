@@ -1,7 +1,7 @@
-const { buildToc } = require('../scripts/buildToc')
-const { resolve } = require('path')
+import { buildToc } from '../scripts/buildToc'
+import { resolve } from 'path'
 
-module.exports = {
+export default {
   zh: {
     '/guide/': [
       {

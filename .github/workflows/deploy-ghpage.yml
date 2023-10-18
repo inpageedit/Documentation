@@ -23,27 +23,21 @@ jobs:
       - name: 安装 Node.js
         uses: actions/setup-node@master
         with:
-          node-version: 14
+          node-version: 18
           registry-url: https://registry.npmjs.org/
-
-      - name: 安装 yarn
-        run: |
-          npm install yarn -g
 
       - name: 安装项目依赖
         run: |
-          yarn install
+          pnpm install
 
       - name: 构建项目
         run: |
-          yarn build
+          pnpm build
 
       - name: 部署到 ghpage
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-          PUBLISH_BRANCH: ghpage
-          PUBLISH_DIR: ./dist
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          emptyCommits: false
-          forceOrphan: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: ghpage
+          publish_dir: ./dist
+          force_orphan: true

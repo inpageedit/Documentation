@@ -32,6 +32,6 @@ InPageEdit 具有较好的移动设备支持以及~~毫无卵用的~~<span style
 
 InPageEdit 提供了人类可读式的个性化设定窗口，想要保存一段炫酷的编辑提示但是不知道什么是 JSON 格式文件？没关系，你来打字就行了，InPageEdit 会帮你完成设定的保存和配置文档的生成。
 
-InPageEdit 采用~~伪·模块化~~设计，提供许多 [API](/api/) 可以自由调用，并留有传递上下文的 [<status status="dev"/>Hook](/api/hook.html)，这意味着你可以在 InPageEdit 的基础上开发你想要的额外功能，例如在页面的某个地方插入一个快速编辑的按钮，或者在编辑窗口打开时在编辑框旁边插入一段备忘录……
+InPageEdit 采用~~伪·模块化~~设计，提供许多 [API](/api/) 可以自由调用，并留有传递上下文的 [<StatusTag status="dev"/>Hook](/api/hook.html)，这意味着你可以在 InPageEdit 的基础上开发你想要的额外功能，例如在页面的某个地方插入一个快速编辑的按钮，或者在编辑窗口打开时在编辑框旁边插入一段备忘录……
 
 [还等什么，马上使用 →](./install/quick-start.html)

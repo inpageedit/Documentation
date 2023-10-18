@@ -1,11 +1,15 @@
-const path = require('path')
-const sideBar = require('./themeConfig/sideBar')
-const navBar = require('./themeConfig/navBar')
+import { defineUserConfig } from 'vuepress'
+// import { viteBundler } from '@vuepress/bundler-vite'
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { pwaPlugin } from '@vuepress/plugin-pwa'
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import path from 'path'
+import theme from './theme'
 
 /** @type {import('vuepress').AppConfig} */
-module.exports = {
+export default defineUserConfig({
   // base: '/Documentation/',
-  bundler: '@vuepress/bundler-vite',
   locales: {
     '/': {
       lang: 'zh-CN',
@@ -58,35 +62,26 @@ module.exports = {
   ],
   dest: './dist',
   plugins: [
-    ['@vuepress/plugin-back-to-top'],
-    // ['@vuepress/plugin-search'],
-    [
-      '@vuepress/plugin-docsearch',
-      {
-        apiKey: '59c89e1e2464da17d2b76e6f7757ec2c',
-        indexName: 'ipe-js',
-        locales: {
-          '/': {
-            placeholder: '搜索',
-          },
-          '/en/': {
-            placeholder: 'Search',
-          },
+    backToTopPlugin(),
+    docsearchPlugin({
+      appId: 'A5IY4FQUKF',
+      apiKey: '0f3e3e3d0151afdafaa23a4133c42b2f',
+      indexName: 'ipe-js',
+      locales: {
+        '/': {
+          placeholder: '搜索',
+        },
+        '/en/': {
+          placeholder: 'Search',
         },
       },
-    ],
-    [
-      '@vuepress/plugin-register-components',
-      {
-        componentsDir: path.resolve(__dirname, './components'),
-      },
-    ],
-    [
-      '@vuepress/plugin-pwa',
-      {
-        skipWaiting: true,
-      },
-    ],
+    }),
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, './components'),
+    }),
+    pwaPlugin({
+      skipWaiting: true,
+    }),
   ],
   markdown: {
     importCode: {
@@ -94,35 +89,5 @@ module.exports = {
         str.replace(/^@src/, path.resolve(__dirname, '../')),
     },
   },
-  themeConfig: {
-    logo: '/images/logo/IPE-v2.png',
-    docsRepo: 'https://github.com/inpageedit/Documentation',
-    docsBranch: 'master',
-    docsDir: 'src',
-    editLinks: true,
-    locales: {
-      ariaLabel: 'Languages',
-      selectText: 'Languages',
-      '/': {
-        selectLanguageName: '简体中文',
-        lastUpdatedText: '上次更新',
-        editLinkText: '帮助我们改善此页面',
-        contributorsText: '编辑者',
-        navbar: navBar.zh,
-        sidebar: sideBar.zh,
-        tip: '提示',
-        warning: '注意',
-        danger: '警告',
-        backToHome: '回到首页',
-      },
-      '/en/': {
-        selectLanguageName: 'English',
-        lastUpdatedText: 'Last Updated',
-        editLinkText: 'Help us improve this page',
-        contributorsText: 'Contributors',
-        navbar: navBar.en,
-        sidebar: sideBar.en,
-      },
-    },
-  },
-}
+  theme,
+})

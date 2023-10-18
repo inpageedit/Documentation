@@ -11,7 +11,7 @@
 ## `window.InPageEdit`
 
 ```javascript
-window.InPageEdit = InPageEdit;
+window.InPageEdit = InPageEdit
 ```
 
 ## `InPageEdit.about()`
@@ -20,7 +20,7 @@ window.InPageEdit = InPageEdit;
 
 ## `InPageEdit.api`
 
-<status status="error">锁定</status>
+<StatusTag status="error">锁定</StatusTag>
 
 保留了有关 InPageEdit 的一些接口，例如
 
@@ -66,7 +66,9 @@ window.InPageEdit = InPageEdit;
 
 ### `InPageEdit.preference.set(<settingKey>[, settingValue])`
 
-<infobox type="info">不推荐使用此函数保存个人设置</infobox>
+::: warning 注意
+不推荐在个人 JS 中使用此函数配置个人设置，因为它不会被持久化保存
+:::
 
 保存参数设置的值
 
@@ -133,7 +135,7 @@ window.InPageEdit = InPageEdit;
 
 ## `InPageEdit.version`
 
-<status status="error">锁定</status>
+<StatusTag status="error">锁定</StatusTag>
 
 - Type: "String"
 - Return: 当前使用的 InPageEdit 版本号
@@ -144,7 +146,7 @@ window.InPageEdit = InPageEdit;
 
 ## `_msg(<msgKey>[, ...args])`
 
-<status status="warning">内部</status>
+<StatusTag status="warning">内部</StatusTag>
 
 通过键获取 i18n 字符串
 

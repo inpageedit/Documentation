@@ -1,29 +1,25 @@
-const fs = require('fs')
-const path = require('path')
+import { readdirSync } from 'fs'
 
-function buildToc(dir) {
+export function buildToc(dir: string) {
   console.log('BUild version sideBar list for', dir)
   // Read all files
-  const files = fs.readdirSync(dir)
+  const files = readdirSync(dir)
   // Cache valid files
-  var toc = []
+  var toc: string[] = []
   for (let fileName of files) {
     console.log(fileName)
     if (
       fileName.toLowerCase() !== 'readme.md' &&
       fileName.toLowerCase() !== 'latest.md' &&
       fileName.toLowerCase() !== 'next.md' &&
-      fileName
-        .split('.')
-        .pop()
-        .toLowerCase() === 'md'
+      fileName.split('.').pop()!.toLowerCase() === 'md'
     ) {
       toc.push(fileName.replace(/\.md$/i, ''))
     }
   }
 
   // Sort version numbers
-  function rule(str1, str2) {
+  function rule(str1: string, str2: string) {
     var arr1 = str1.split('.'),
       arr2 = str2.split('.'),
       minLen = Math.min(arr1.length, arr2.length),
@@ -42,6 +38,7 @@ function buildToc(dir) {
         }
       }
     }
+    return 0
   }
 
   toc.sort(rule)
@@ -53,8 +50,4 @@ function buildToc(dir) {
   console.log('Build sideBar', tocList)
 
   return tocList
-}
-
-module.exports = {
-  buildToc,
 }
