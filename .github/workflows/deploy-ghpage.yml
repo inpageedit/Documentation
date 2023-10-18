@@ -26,9 +26,13 @@ jobs:
           node-version: 18
           registry-url: https://registry.npmjs.org/
 
+      - name: 安装包管理器
+        run: |
+          npm i -g pnpm
+
       - name: 安装项目依赖
         run: |
-          pnpm install
+          pnpm i
 
       - name: 构建项目
         run: |
