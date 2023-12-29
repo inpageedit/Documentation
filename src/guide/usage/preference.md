@@ -38,7 +38,7 @@
 
 ### Plugin - CodeMirror
 
-| 键名                 | 类型      | 预设                | 说明                                       |
-| -------------------- | --------- | ------------------- | ------------------------------------------ |
-| codeMirrorTheme      | `string`  | `'solarized light'` | 定义 CodeMirror 插件所加载的主题           |
-| codeMirrorThemeNoCSS | `boolean` | -                   | 是否不自动加载主题以便使用自定义的主题 CSS |
+| 键名                 | 类型      | 预设                | 说明                                                                                                                                                   |
+| -------------------- | --------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| codeMirrorTheme      | `string`  | `'solarized light'` | 定义 CodeMirror 插件所加载的主题，所有可用的主题可以在 [这里找到](https://www.jsdelivr.com/package/npm/codemirror?tab=files&version=5.65.1&path=theme) |
+| codeMirrorThemeNoCSS | `boolean` | -                   | 是否不自动加载主题以便使用自定义的主题 CSS                                                                                                             |
