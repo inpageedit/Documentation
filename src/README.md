@@ -20,3 +20,13 @@ footer: MIT Licensed | Copyright © 2020-present Wjghj Project (Documentations)
 在你的个人 js 页面添加以下内容，立刻使用：
 
 @[code](@src/.vuepress/components/install.js)
+
+<style>
+.hero {
+  & img {
+    height: auto;
+    width: 800px;
+    max-width: 100%;
+  }
+}
+</style>
