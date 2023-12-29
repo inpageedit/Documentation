@@ -90,4 +90,8 @@ export default defineUserConfig({
     },
   },
   theme,
+  extendsMarkdown(md, app) {},
+  extendsMarkdownOptions(opt, app) {
+    opt.linkify = true
+  },
 })
