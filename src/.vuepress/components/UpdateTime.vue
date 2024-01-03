@@ -18,7 +18,7 @@ const computedDate = computed(() => {
   return props.date ? new Date(props.date) : new Date()
 })
 const formatedStr = computed(() => {
-  if (window.Intl) {
+  if (Intl) {
     return new Intl.DateTimeFormat('default', {
       dateStyle: 'medium',
       timeStyle: 'medium',
