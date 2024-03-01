@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6675a47a","path":"/guide/usage/quick-redirect.html","title":"快速重定向 quick-redirect","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1709286572000,"contributors":[{"name":"机智的小鱼君","email":"44761872+dragon-fish@users.noreply.github.com","commits":1}]},"filePathRelative":"guide/usage/quick-redirect.md"}');export{e as data};

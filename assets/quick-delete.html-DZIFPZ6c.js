@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-49475740","path":"/en/guide/usage/quick-delete.html","title":"Quick-delete","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1709286572000,"contributors":[{"name":"机智的小鱼君","email":"44761872+dragon-fish@users.noreply.github.com","commits":1}]},"filePathRelative":"en/guide/usage/quick-delete.md"}');export{e as data};

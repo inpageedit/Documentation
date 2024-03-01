@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0be73d8a","path":"/develop/plugin.html","title":"Plugin 开发指南","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1709286572000,"contributors":[{"name":"机智的小鱼君","email":"44761872+dragon-fish@users.noreply.github.com","commits":1}]},"filePathRelative":"develop/plugin.md"}');export{e as data};

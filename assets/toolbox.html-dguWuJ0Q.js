@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as s,b as o,d as a}from"./app-gllHuPV0.js";const c={},n=o("h1",{id:"toolbox",tabindex:"-1"},[o("a",{class:"header-anchor",href:"#toolbox","aria-hidden":"true"},"#"),a(" Toolbox")],-1),r=o("p",null,"Postponing",-1),_=[n,r];function l(d,i){return t(),s("div",null,_)}const x=e(c,[["render",l],["__file","toolbox.html.vue"]]);export{x as default};

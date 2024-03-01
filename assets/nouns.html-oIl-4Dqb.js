@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4bb7f28b","path":"/develop/nouns.html","title":"InPageEdit 名词表","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1709286572000,"contributors":[{"name":"机智的小鱼君","email":"44761872+dragon-fish@users.noreply.github.com","commits":1}]},"filePathRelative":"develop/nouns.md"}');export{e as data};

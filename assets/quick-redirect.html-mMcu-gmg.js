@@ -1,0 +1,1 @@
+import{_ as c,o as r,c as t,b as e,d as i}from"./app-gllHuPV0.js";const a={},d=e("h1",{id:"quick-redirect",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#quick-redirect","aria-hidden":"true"},"#"),i(" Quick-redirect")],-1),o=[d];function s(n,_){return r(),t("div",null,o)}const h=c(a,[["render",s],["__file","quick-redirect.html.vue"]]);export{h as default};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-5c0c536d","path":"/update/","title":"更新日志","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1709286572000,"contributors":[{"name":"机智的小鱼君","email":"44761872+dragon-fish@users.noreply.github.com","commits":1}]},"filePathRelative":"update/README.md"}');export{t as data};

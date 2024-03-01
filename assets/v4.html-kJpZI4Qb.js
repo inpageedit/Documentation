@@ -1,0 +1,62 @@
+import{_ as i,r as e,o as r,c as l,b as n,d as s,e as t,f as c,a}from"./app-gllHuPV0.js";const u={},d=n("h1",{id:"analysis-v4",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#analysis-v4","aria-hidden":"true"},"#"),s(" Analysis V4")],-1),v=n("h2",{id:"简介",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#简介","aria-hidden":"true"},"#"),s(" 简介")],-1),m={href:"https://analysis.ipe.wjghj.cn/api",target:"_blank",rel:"noopener noreferrer"},k=a(`<p>V4 是首个使用 serverless 技术的版本，API 结构有破坏性变更，数据结构无变化。</p><h2 id="入口文件" tabindex="-1"><a class="header-anchor" href="#入口文件" aria-hidden="true">#</a> 入口文件</h2><div class="language-http line-numbers-mode" data-ext="http"><pre class="language-http"><code>GET /api
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="获取数据" tabindex="-1"><a class="header-anchor" href="#获取数据" aria-hidden="true">#</a> 获取数据</h2><div class="language-http line-numbers-mode" data-ext="http"><pre class="language-http"><code>GET /api/auery/:type
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,5),g=a(`<h3 id="type-wiki" tabindex="-1"><a class="header-anchor" href="#type-wiki" aria-hidden="true">#</a> <code>type=wiki</code></h3><p>获取 wiki 站点数据</p><p><strong>Send</strong></p><div class="language-http line-numbers-mode" data-ext="http"><pre class="language-http"><code>GET /api/query/wiki?sitename=[sitename]&amp;siteurl=[siteurl]&amp;prop=[prop]&amp;sortby=[sortby]&amp;sortorder=[sortorder]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>Params</strong></p><p>以下两个为 wiki 筛选，仅生效一条，优先级从高到低排序。可选，若未指定则搜索全部 wiki。</p><ul><li>siteurl <code>{String&lt;URL&gt;}</code><ul><li>若指定，以 url 为键搜索数据，确切匹配</li></ul></li><li>sitename <code>{String}</code><ul><li>若指定，以 sitename 为键搜索数据，模糊匹配，接受正则表达式，若有重名 wiki 将返回多个数据</li></ul></li></ul><p>以下为项目筛选，可选。</p><ul><li>prop <code>{String}</code><ul><li>@default <code>&quot;url|sitename|_total&quot;</code></li><li>若指定，仅显示指定数据，多个以<code>|</code>隔开</li><li>url, sitename, _total, date, functions, users</li></ul></li><li>sortby <code>{String}</code><ul><li>若指定，按键排序 wiki array</li></ul></li><li>sortorder <code>{Number}</code><ul><li>排序规则，预设顺序</li><li>&gt;= 0 顺序</li><li>&lt; 0 倒序</li></ul></li></ul><p><strong>Response</strong></p><p><code>application/json</code></p><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// false</span>
+    <span class="token string-property property">&quot;query&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token comment">// wikis...</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">errors</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token comment">// if error</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// Server informations...</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="type-date" tabindex="-1"><a class="header-anchor" href="#type-date" aria-hidden="true">#</a> <code>type=date</code></h3><p>暂未实装。</p><h2 id="提交数据" tabindex="-1"><a class="header-anchor" href="#提交数据" aria-hidden="true">#</a> 提交数据</h2><p><strong>Send</strong></p><div class="language-http line-numbers-mode" data-ext="http"><pre class="language-http"><code>POST /api/submit
+
+application/json
+{
+  &quot;url&quot;: &quot;&lt;wgServerName&gt;&lt;wgArticlePath&gt;&quot;,
+  &quot;sitename&quot;: &quot;&lt;wgSiteName&gt;&quot;,
+  &quot;username&quot;: &quot;&lt;wgUserName&gt;&quot;,
+  &quot;functionID&quot;: &quot;&lt;inpageedit_function_name&gt;&quot;
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>所有数据将会被验证：</p>`,18),b=n("li",null,"url 必须为合法的 URL",-1),h=n("li",null,[s("将处理潜在的 xss 风险，"),n("code",null,"<(.+?)>"),s(" → "),n("code",null,"&lt;$1&gt;")],-1),q=n("li",null,[s("username 不允许不合法的用户名，不可出现以下符号："),n("code",null,"#&?=[]{}")],-1),y=n("li",null,"functionID 有白名单机制",-1),_=a(`<p><strong>Response</strong></p><p><code>application/json</code></p><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// false</span>
+  <span class="token string-property property">&quot;submit&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// submitted data..</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">errors</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// if error</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// Server informations...</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="数据结构" tabindex="-1"><a class="header-anchor" href="#数据结构" aria-hidden="true">#</a> 数据结构</h2><p>⚠️注意：由于技术原因，<code>sitename</code>与<code>username</code>中的英文句号<code>.</code>将被转义为<code>{dot}</code>储存</p><p><code>application/BSON</code></p><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;_id&quot;</span><span class="token operator">:</span> <span class="token function">ObjectId</span><span class="token punctuation">(</span><span class="token string">&quot;&lt;ID&gt;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&lt;wgServer&gt;&lt;wgArticlePath&gt;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;sitename&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&lt;wgSiteName&gt;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;_total&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;date&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;&lt;Y-m-d&gt;&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;_total&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;&lt;inpageedit_function_name&gt;&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;functions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;&lt;inpageedit_function_name&gt;&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;users&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;&lt;wgUserName&gt;&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;_total&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;date&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;&lt;Y-m-d&gt;&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string-property property">&quot;_total&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+          <span class="token string-property property">&quot;&lt;inpageedit_function_name&gt;&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;functions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;&lt;inpageedit_function_name&gt;&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,7);function f(x,w){const p=e("ExternalLinkIcon"),o=e("StatusTag");return r(),l("div",null,[d,v,n("p",null,[s("API 接入点："),n("a",m,[s("https://analysis.ipe.wjghj.cn/api"),t(p)])]),k,c(" 所有返回数据将做转义处理，防止潜在的 xss 攻击。 "),g,n("ul",null,[b,n("li",null,[s("sitename, username "),n("ul",null,[h,n("li",null,[t(o,{status:"dev"}),s(" 关键词屏蔽，防止冒犯性词汇")])])]),q,y]),_])}const S=i(u,[["render",f],["__file","v4.html.vue"]]);export{S as default};

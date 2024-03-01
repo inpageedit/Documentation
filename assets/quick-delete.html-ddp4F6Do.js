@@ -1,0 +1,1 @@
+import{_ as t,o as c,c as a,b as e,d}from"./app-gllHuPV0.js";const o={},r=e("h1",{id:"quick-delete",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#quick-delete","aria-hidden":"true"},"#"),d(" Quick-delete")],-1),s=[r];function i(n,_){return c(),a("div",null,s)}const u=t(o,[["render",i],["__file","quick-delete.html.vue"]]);export{u as default};

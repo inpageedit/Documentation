@@ -1,0 +1,1 @@
+import{_ as o,o as t,c as a,b as e,d as c}from"./app-gllHuPV0.js";const r={},s=e("h1",{id:"hook",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#hook","aria-hidden":"true"},"#"),c(" Hook")],-1),n=[s];function _(d,h){return t(),a("div",null,n)}const l=o(r,[["render",_],["__file","hook.html.vue"]]);export{l as default};

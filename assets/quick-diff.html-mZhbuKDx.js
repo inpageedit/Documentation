@@ -1,0 +1,1 @@
+import{_ as c,o as t,c as i,b as e,d as a}from"./app-gllHuPV0.js";const d={},f=e("h1",{id:"quick-diff",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#quick-diff","aria-hidden":"true"},"#"),a(" Quick-diff")],-1),o=[f];function r(s,n){return t(),i("div",null,o)}const u=c(d,[["render",r],["__file","quick-diff.html.vue"]]);export{u as default};

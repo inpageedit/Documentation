@@ -1,0 +1,1 @@
+import{_ as r,o as c,c as t,b as e,d as n}from"./app-gllHuPV0.js";const s={},a=e("h1",{id:"preferences",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#preferences","aria-hidden":"true"},"#"),n(" Preferences")],-1),o=[a];function _(d,f){return c(),t("div",null,o)}const h=r(s,[["render",_],["__file","preference.html.vue"]]);export{h as default};

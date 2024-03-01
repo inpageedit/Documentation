@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-14239e2b","path":"/update/1.x.html","title":"Earlier version (1.x)","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1709286572000,"contributors":[{"name":"机智的小鱼君","email":"44761872+dragon-fish@users.noreply.github.com","commits":1}]},"filePathRelative":"update/1.x.md"}');export{e as data};

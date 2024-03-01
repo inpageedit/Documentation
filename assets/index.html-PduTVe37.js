@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as n,b as e,d as o}from"./app-gllHuPV0.js";const c={},d=e("h1",{id:"about-inpageedit",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#about-inpageedit","aria-hidden":"true"},"#"),o(" About InPageEdit")],-1),i=[d];function r(s,_){return a(),n("div",null,i)}const l=t(c,[["render",r],["__file","index.html.vue"]]);export{l as default};

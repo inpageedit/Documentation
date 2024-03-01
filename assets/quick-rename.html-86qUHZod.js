@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-f6fcace6","path":"/en/guide/usage/quick-rename.html","title":"Quick-rename","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1709286572000,"contributors":[{"name":"机智的小鱼君","email":"44761872+dragon-fish@users.noreply.github.com","commits":1}]},"filePathRelative":"en/guide/usage/quick-rename.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-61b22826","path":"/en/guide/intro.html","title":"About","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1709286572000,"contributors":[{"name":"机智的小鱼君","email":"44761872+dragon-fish@users.noreply.github.com","commits":1}]},"filePathRelative":"en/guide/intro.md"}');export{e as data};
