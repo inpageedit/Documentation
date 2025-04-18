@@ -1,5 +1,5 @@
 import { defineUserConfig } from 'vuepress'
-// import { viteBundler } from '@vuepress/bundler-vite'
+import { viteBundler } from '@vuepress/bundler-vite'
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { pwaPlugin } from '@vuepress/plugin-pwa'
@@ -79,9 +79,7 @@ export default defineUserConfig({
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components'),
     }),
-    pwaPlugin({
-      skipWaiting: true,
-    }),
+    pwaPlugin({}),
   ],
   markdown: {
     importCode: {
@@ -94,4 +92,5 @@ export default defineUserConfig({
   extendsMarkdownOptions(opt, app) {
     opt.linkify = true
   },
+  bundler: viteBundler({}),
 })

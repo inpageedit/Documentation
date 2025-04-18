@@ -1,4 +1,5 @@
-import { defaultTheme } from 'vuepress'
+import {} from 'vuepress'
+import { defaultTheme } from '@vuepress/theme-default'
 import sideBar from './sideBar'
 import navBar from './navBar'
 
