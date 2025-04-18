@@ -1,0 +1,1 @@
+import{_ as e,c as r,o as t,b as a,d as s,n as c,t as l}from"./app-BUO_Z_l1.js";const n={name:"ColorPreview",props:{color:{type:String,default:"#000000"}}},i={class:"color-preview"};function p(_,d,o,f,u,m){return t(),r("span",i,[a("span",{class:"color-block",style:c({backgroundColor:o.color})},null,4),s(l(o.color),1)])}const x=e(n,[["render",p]]);export{x as default};
