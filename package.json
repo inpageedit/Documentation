@@ -16,7 +16,7 @@
   "author": "Dragon-Fish",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.18.8",
     "@vuepress/bundler-vite": "next",
     "@vuepress/plugin-back-to-top": "next",
     "@vuepress/plugin-docsearch": "next",
@@ -24,11 +24,11 @@
     "@vuepress/plugin-register-components": "next",
     "@vuepress/plugin-search": "next",
     "@vuepress/theme-default": "2.0.0-rc.96",
-    "typescript": "^5.8.3",
-    "vue": "^3.5.13",
+    "typescript": "^5.9.3",
+    "vue": "^3.5.22",
     "vuepress": "next"
   },
   "peerDependencies": {
-    "vue": "^3.5.13"
+    "vue": "^3.5.22"
   }
 }

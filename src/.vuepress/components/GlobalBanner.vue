@@ -1,37 +1,58 @@
 <template>
-  <div class="global-banner">
+  <a href="https://www.ipe.wiki" class="global-banner" v-if="!isClosed">
     <div class="banner-content">
-      <div class="banner-text">🎉 欢迎试用全新版本 InPageEdit NEXT</div>
-      <a href="https://www.ipe.wiki" class="banner-link"> 立即体验 → </a>
+      <div class="banner-text">
+        {{ curMsg['banner-text'] }}
+      </div>
+      <a class="banner-link">{{ curMsg['banner-link'] }}</a>
       <div style="flex: 1"></div>
-      <button class="banner-close" @click="closeBanner" aria-label="关闭横幅">
+      <button
+        class="banner-close"
+        @click.prevent="closeBanner"
+        aria-label="Close banner"
+      >
         ×
       </button>
     </div>
-  </div>
+  </a>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed, effect } from 'vue'
+import { useLang } from 'vuepress/client'
+
+const i18n = {
+  'zh-CN': {
+    'banner-text': '🎉 欢迎试用全新版本 InPageEdit NEXT',
+    'banner-link': '立即体验 →',
+  },
+  en: {
+    'banner-text': "🎉 Here's new era of MediaWiki edit tool: InPageEdit NEXT",
+    'banner-link': 'Try it now →',
+  },
+}
+const lang = useLang()
+const curMsg = computed(() => i18n[lang.value] || i18n.en)
 
 const isClosed = ref(false)
+const BANNER_ID = 'ipe-next'
 
 onMounted(() => {
-  // 检查是否之前关闭过横幅
   const closed = localStorage.getItem('ipe-banner-closed')
-  if (closed === 'true') {
+  if (closed === BANNER_ID) {
     isClosed.value = true
   }
 })
 
 const closeBanner = () => {
   isClosed.value = true
-  localStorage.setItem('ipe-banner-closed', 'true')
-  const banner = document.querySelector('.global-banner')
-  if (banner) {
-    banner.remove()
-  }
+  localStorage.setItem('ipe-banner-closed', BANNER_ID)
 }
+
+effect(() => {
+  if (!document) return
+  document.body.classList.toggle('has-banner', !isClosed.value)
+})
 </script>
 
 <style scoped>
@@ -43,7 +64,7 @@ const closeBanner = () => {
   position: fixed;
   top: var(--navbar-height);
   width: 100%;
-  z-index: 1000;
+  z-index: 10;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -111,6 +132,15 @@ const closeBanner = () => {
   .banner-link {
     padding: 4px 12px;
     font-size: 14px;
+  }
+}
+</style>
+
+<style lang="scss">
+body.has-banner {
+  .vp-theme-container,
+  .vp-sidebar-items {
+    margin-top: 60px;
   }
 }
 </style>
