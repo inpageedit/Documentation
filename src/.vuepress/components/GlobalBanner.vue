@@ -50,7 +50,7 @@ const closeBanner = () => {
 }
 
 effect(() => {
-  if (!document) return
+  if (typeof document === 'undefined') return
   document.body.classList.toggle('has-banner', !isClosed.value)
 })
 </script>
