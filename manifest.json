@@ -1,0 +1,23 @@
+{
+  "name": "InPageEdit文档中心",
+  "short_name": "IPE Doc",
+  "description": "InPageEdit官方文档中心",
+  "lang": "zh-CN",
+  "start_url": "/?utm_source=pwa",
+  "scope": "/",
+  "display": "fullscreen",
+  "background_color": "#ffffff",
+  "theme_color": "aliceblue",
+  "icons": [
+    {
+      "src": "/images/logo/IPE.png",
+      "sizes": "250x250",
+      "type": "image/jpg"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "web"
+    }
+  ]
+}
