@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, computed, effect } from 'vue'
+import { ref, onMounted, computed, effect, onBeforeUnmount } from 'vue'
 import { useLang } from 'vuepress/client'
 
 const i18n = {
@@ -37,22 +37,26 @@ const curMsg = computed(() => i18n[lang.value] || i18n.en)
 const isClosed = ref(false)
 const BANNER_ID = 'ipe-next'
 
+let stopEffect: () => void
 onMounted(() => {
   const closed = localStorage.getItem('ipe-banner-closed')
   if (closed === BANNER_ID) {
     isClosed.value = true
   }
+
+  stopEffect = effect(() => {
+    if (typeof document === 'undefined') return
+    document.body.classList.toggle('has-banner', !isClosed.value)
+  })
+})
+onBeforeUnmount(() => {
+  stopEffect?.()
 })
 
 const closeBanner = () => {
   isClosed.value = true
   localStorage.setItem('ipe-banner-closed', BANNER_ID)
 }
-
-effect(() => {
-  if (typeof document === 'undefined') return
-  document.body.classList.toggle('has-banner', !isClosed.value)
-})
 </script>
 
 <style scoped>
